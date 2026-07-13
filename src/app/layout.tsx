@@ -48,13 +48,17 @@ export const metadata: Metadata = {
       },
     ],
   },
+  // Prefer PNG monogram so browsers don't stick on the default Next.ico
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/favicon.ico", sizes: "48x48" },
     ],
+    shortcut: [{ url: "/icon.png", type: "image/png" }],
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
+  metadataBase: new URL("https://maison-fete.vercel.app"),
 };
 
 export default function RootLayout({
