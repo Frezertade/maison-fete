@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section
@@ -19,6 +21,21 @@ export default function Hero() {
         </video>
         <div className="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/55 to-espresso/25" />
         <div className="absolute inset-0 bg-gradient-to-r from-espresso/50 via-transparent to-transparent" />
+      </div>
+
+      {/* Subtle brand monogram watermark */}
+      <div
+        className="pointer-events-none absolute right-[-6%] top-[12%] hidden w-[min(42vw,420px)] opacity-[0.18] md:block"
+        aria-hidden
+      >
+        <Image
+          src="/images/logo/monogram-dark.jpg"
+          alt=""
+          width={420}
+          height={420}
+          className="h-auto w-full rounded-full mix-blend-screen"
+          priority
+        />
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-5 pb-16 pt-32 md:px-8 md:pb-24">

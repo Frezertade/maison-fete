@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { LogoSeal } from "@/components/Logo";
 import { site } from "@/lib/content";
 
 export default function About() {
@@ -38,12 +39,16 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-6 left-1/2 hidden -translate-x-1/2 rounded-full bg-espresso px-6 py-3 text-[11px] uppercase tracking-[0.2em] text-champagne shadow-xl md:block">
-              Serving {site.address}
+            {/* Brand seal float */}
+            <div className="absolute -bottom-8 left-1/2 z-10 hidden w-28 -translate-x-1/2 md:block md:w-32">
+              <LogoSeal className="shadow-2xl shadow-espresso/20 ring-4 ring-ivory" />
             </div>
           </div>
 
           <div className="lg:col-span-6">
+            <div className="mb-6 flex items-center gap-4 md:hidden">
+              <LogoSeal className="h-20 w-20" />
+            </div>
             <p className="text-[11px] uppercase tracking-[0.3em] text-gold">
               Our Studio
             </p>

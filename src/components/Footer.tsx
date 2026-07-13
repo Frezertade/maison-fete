@@ -1,15 +1,19 @@
+import Logo from "@/components/Logo";
 import { nav, site } from "@/lib/content";
 
 export default function Footer() {
   return (
-    <footer data-nav-theme="dark" className="border-t border-soft-white/10 bg-espresso text-cream">
+    <footer
+      data-nav-theme="dark"
+      className="border-t border-soft-white/10 bg-espresso text-cream"
+    >
       <div className="mx-auto max-w-7xl px-5 py-16 md:px-8">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
-            <a href="#top" className="font-display text-3xl tracking-[0.08em]">
-              Maison <span className="italic text-champagne">Fête</span>
+            <a href="#top" aria-label="Maison Fête home">
+              <Logo theme="dark" variant="full" />
             </a>
-            <p className="mt-4 max-w-sm text-sm leading-relaxed text-cream/60">
+            <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/60">
               {site.description}
             </p>
           </div>
@@ -37,7 +41,10 @@ export default function Footer() {
             <ul className="mt-4 space-y-2 text-sm text-cream/70">
               <li>{site.address}</li>
               <li>
-                <a href={`mailto:${site.email}`} className="hover:text-champagne">
+                <a
+                  href={`mailto:${site.email}`}
+                  className="hover:text-champagne"
+                >
                   {site.email}
                 </a>
               </li>

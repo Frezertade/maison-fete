@@ -39,6 +39,21 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Maison Fête",
+    images: [
+      {
+        url: "/images/logo/monogram-dark.jpg",
+        width: 1024,
+        height: 1024,
+        alt: "Maison Fête logo",
+      },
+    ],
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
 };
 

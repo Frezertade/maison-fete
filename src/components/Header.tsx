@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Logo from "@/components/Logo";
 import { nav, site } from "@/lib/content";
 
 /**
@@ -82,9 +83,6 @@ export default function Header() {
         : "bg-gradient-to-b from-espresso/70 via-espresso/35 to-transparent"
       : "bg-ivory/95 backdrop-blur-md shadow-[0_1px_0_rgba(28,22,18,0.08)]";
 
-  const logoMain = darkMode ? "text-soft-white" : "text-espresso";
-  const logoAccent = darkMode ? "text-champagne" : "text-gold";
-  const logoSub = darkMode ? "text-cream/70" : "text-warm-gray";
   const linkClass = darkMode
     ? "text-soft-white/90 hover:text-champagne"
     : "text-charcoal hover:text-espresso";
@@ -99,17 +97,8 @@ export default function Header() {
       data-theme={darkMode ? "dark" : "light"}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8 md:py-5">
-        <a href="#top" className="group relative z-50">
-          <span
-            className={`font-display text-2xl tracking-[0.08em] transition-colors duration-300 md:text-[1.65rem] ${logoMain}`}
-          >
-            Maison <span className={`italic ${logoAccent}`}>Fête</span>
-          </span>
-          <span
-            className={`mt-0.5 block text-[10px] uppercase tracking-[0.28em] transition-colors duration-300 ${logoSub}`}
-          >
-            Lancaster, PA
-          </span>
+        <a href="#top" className="group relative z-50" aria-label="Maison Fête home">
+          <Logo theme={darkMode ? "dark" : "light"} variant="full" priority />
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -158,6 +147,9 @@ export default function Header() {
         }`}
       >
         <div className="flex h-full flex-col justify-center px-8">
+          <div className="mb-10">
+            <Logo theme="light" variant="full" />
+          </div>
           <nav className="flex flex-col gap-6">
             {nav.map((item, i) => (
               <a
