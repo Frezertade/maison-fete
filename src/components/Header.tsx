@@ -3,15 +3,63 @@
 import { useEffect, useState } from "react";
 import { nav, site } from "@/lib/content";
 
+/**
+ * Position-aware header colors:
+ * - Over dark sections (hero, process, etc.): light text + dark glass
+ * - Over light sections: dark text + ivory glass when scrolled
+ * Always high contrast so links stay readable.
+ */
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [overDark, setOverDark] = useState(true); // hero starts dark
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    const update = () => {
+      const y = window.scrollY;
+      setScrolled(y > 24);
+
+      // Sample a line under the fixed header (center of header bar)
+      const probeY = Math.min(72, window.innerHeight * 0.08);
+      const probeX = window.innerWidth / 2;
+      const stack = document.elementsFromPoint(probeX, probeY);
+
+      let theme: "dark" | "light" | null = null;
+      for (const el of stack) {
+        if (!(el instanceof HTMLElement)) continue;
+        // Skip the header itself and its children
+        if (el.closest("header")) continue;
+        const marked = el.closest("[data-nav-theme]") as HTMLElement | null;
+        if (marked) {
+          theme = marked.dataset.navTheme === "dark" ? "dark" : "light";
+          break;
+        }
+      }
+
+      // Fallback: if still over #top / hero area before first light section
+      if (!theme) {
+        const hero = document.getElementById("top");
+        if (hero) {
+          const rect = hero.getBoundingClientRect();
+          theme = rect.bottom > probeY + 20 ? "dark" : "light";
+        } else {
+          theme = "light";
+        }
+      }
+
+      setOverDark(theme === "dark");
+    };
+
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update, { passive: true });
+    // Re-check after layout/images settle
+    const t = window.setTimeout(update, 100);
+    return () => {
+      window.removeEventListener("scroll", update);
+      window.removeEventListener("resize", update);
+      window.clearTimeout(t);
+    };
   }, []);
 
   useEffect(() => {
@@ -21,20 +69,45 @@ export default function Header() {
     };
   }, [open]);
 
+  // Mobile drawer always uses light theme for readability
+  const darkMode = open ? false : overDark;
+  // Solid-ish bar when scrolled or menu open; transparent only at top of dark hero
+  const solidBar = scrolled || open || !overDark;
+
+  const headerBg = open
+    ? "bg-ivory"
+    : darkMode
+      ? solidBar
+        ? "bg-espresso/85 backdrop-blur-md shadow-[0_1px_0_rgba(255,255,255,0.08)]"
+        : "bg-gradient-to-b from-espresso/70 via-espresso/35 to-transparent"
+      : "bg-ivory/95 backdrop-blur-md shadow-[0_1px_0_rgba(28,22,18,0.08)]";
+
+  const logoMain = darkMode ? "text-soft-white" : "text-espresso";
+  const logoAccent = darkMode ? "text-champagne" : "text-gold";
+  const logoSub = darkMode ? "text-cream/70" : "text-warm-gray";
+  const linkClass = darkMode
+    ? "text-soft-white/90 hover:text-champagne"
+    : "text-charcoal hover:text-espresso";
+  const ctaClass = darkMode
+    ? "border-champagne/50 bg-champagne text-espresso hover:bg-soft-white hover:border-soft-white"
+    : "border-espresso/15 bg-espresso text-ivory hover:bg-charcoal";
+  const burgerClass = darkMode ? "bg-soft-white" : "bg-espresso";
+
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled || open
-          ? "bg-ivory/90 backdrop-blur-md shadow-[0_1px_0_rgba(28,22,18,0.06)]"
-          : "bg-transparent"
-      }`}
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${headerBg}`}
+      data-theme={darkMode ? "dark" : "light"}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8 md:py-5">
         <a href="#top" className="group relative z-50">
-          <span className="font-display text-2xl tracking-[0.08em] text-espresso md:text-[1.65rem]">
-            Maison <span className="italic text-gold">Fête</span>
+          <span
+            className={`font-display text-2xl tracking-[0.08em] transition-colors duration-300 md:text-[1.65rem] ${logoMain}`}
+          >
+            Maison <span className={`italic ${logoAccent}`}>Fête</span>
           </span>
-          <span className="mt-0.5 block text-[10px] uppercase tracking-[0.28em] text-warm-gray">
+          <span
+            className={`mt-0.5 block text-[10px] uppercase tracking-[0.28em] transition-colors duration-300 ${logoSub}`}
+          >
             Lancaster, PA
           </span>
         </a>
@@ -44,14 +117,14 @@ export default function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="link-elegant text-[13px] uppercase tracking-[0.18em] text-charcoal/80 transition-colors hover:text-espresso"
+              className={`link-elegant text-[13px] font-medium uppercase tracking-[0.18em] transition-colors duration-300 ${linkClass}`}
             >
               {item.label}
             </a>
           ))}
           <a
             href="#contact"
-            className="rounded-full border border-espresso/15 bg-espresso px-5 py-2.5 text-[12px] uppercase tracking-[0.2em] text-ivory transition-all hover:bg-charcoal hover:shadow-lg"
+            className={`rounded-full border px-5 py-2.5 text-[12px] font-medium uppercase tracking-[0.2em] transition-all duration-300 hover:shadow-lg ${ctaClass}`}
           >
             Book Consult
           </a>
@@ -64,19 +137,19 @@ export default function Header() {
           onClick={() => setOpen((v) => !v)}
         >
           <span
-            className={`h-px w-6 bg-espresso transition-all duration-300 ${
+            className={`h-0.5 w-6 rounded-full transition-all duration-300 ${burgerClass} ${
               open ? "translate-y-[3.5px] rotate-45" : ""
             }`}
           />
           <span
-            className={`h-px w-6 bg-espresso transition-all duration-300 ${
+            className={`h-0.5 w-6 rounded-full transition-all duration-300 ${burgerClass} ${
               open ? "-translate-y-[3.5px] -rotate-45" : ""
             }`}
           />
         </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu — always high-contrast light panel */}
       <div
         className={`fixed inset-0 z-40 bg-ivory transition-all duration-500 lg:hidden ${
           open
@@ -98,7 +171,14 @@ export default function Header() {
               </a>
             ))}
           </nav>
-          <p className="mt-12 text-sm tracking-wide text-warm-gray">
+          <a
+            href="#contact"
+            onClick={() => setOpen(false)}
+            className="mt-10 inline-flex w-fit rounded-full bg-espresso px-6 py-3 text-[12px] uppercase tracking-[0.2em] text-ivory"
+          >
+            Book Consult
+          </a>
+          <p className="mt-10 text-sm tracking-wide text-warm-gray">
             {site.email}
             <br />
             {site.phone}

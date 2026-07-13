@@ -2,7 +2,7 @@ import { nav, site } from "@/lib/content";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-soft-white/10 bg-espresso text-cream">
+    <footer data-nav-theme="dark" className="border-t border-soft-white/10 bg-espresso text-cream">
       <div className="mx-auto max-w-7xl px-5 py-16 md:px-8">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">

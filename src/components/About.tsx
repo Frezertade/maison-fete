@@ -3,7 +3,7 @@ import { site } from "@/lib/content";
 
 export default function About() {
   return (
-    <section id="about" className="bg-ivory py-24 md:py-32">
+    <section id="about" data-nav-theme="light" className="bg-ivory py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="relative lg:col-span-6">

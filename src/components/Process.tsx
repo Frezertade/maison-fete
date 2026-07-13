@@ -2,7 +2,7 @@ import { process } from "@/lib/content";
 
 export default function Process() {
   return (
-    <section id="process" className="bg-espresso py-24 md:py-32">
+    <section id="process" data-nav-theme="dark" className="bg-espresso py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="max-w-2xl">
           <p className="text-[11px] uppercase tracking-[0.3em] text-champagne">

@@ -14,7 +14,7 @@ const items = [
 export default function Marquee() {
   const doubled = [...items, ...items];
   return (
-    <div className="overflow-hidden border-y border-espresso/8 bg-cream py-4">
+    <div data-nav-theme="light" className="overflow-hidden border-y border-espresso/8 bg-cream py-4">
       <div className="marquee-track flex w-max gap-10 whitespace-nowrap">
         {doubled.map((item, i) => (
           <span

@@ -2,6 +2,7 @@ export default function Hero() {
   return (
     <section
       id="top"
+      data-nav-theme="dark"
       className="relative flex min-h-[100svh] items-end overflow-hidden bg-espresso"
     >
       {/* Background video */}

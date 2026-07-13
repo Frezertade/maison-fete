@@ -2,7 +2,7 @@ import { testimonials } from "@/lib/content";
 
 export default function Testimonials() {
   return (
-    <section className="bg-cream py-24 md:py-32">
+    <section data-nav-theme="light" className="bg-cream py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="text-center">
           <p className="text-[11px] uppercase tracking-[0.3em] text-gold">
