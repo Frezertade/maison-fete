@@ -1,5 +1,5 @@
 export const site = {
-  name: "Maison Fête",
+  name: "Lancaster Decorators",
   tagline: "Home & Event Décor · Lancaster, PA",
   description:
     "Lancaster County’s décor and interior styling network. Tell us about your home, holiday, or event and get matched with vetted local décor pros — free, no obligation.",
@@ -257,7 +257,7 @@ export const process = [
 export const testimonials = [
   {
     quote:
-      "Maison Fête transformed our barn wedding into something out of a magazine. Guests still talk about the ceiling florals.",
+      "Lancaster Decorators transformed our barn wedding into something out of a magazine. Guests still talk about the ceiling florals.",
     name: "Elena & Marcus",
     event: "Wedding · Manheim, PA",
   },

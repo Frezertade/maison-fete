@@ -1,4 +1,4 @@
-# Maison Fête
+# Lancaster Decorators
 
 Luxury event décor website for Lancaster, PA — weddings, birthdays, baby showers, graduations, and more.
 
@@ -28,4 +28,4 @@ vercel
 
 ## Brand
 
-**Maison Fête** — full-service event decoration and styling across Lancaster County, Pennsylvania.
+**Lancaster Decorators** — full-service event decoration and styling across Lancaster County, Pennsylvania.

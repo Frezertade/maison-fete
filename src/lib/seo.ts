@@ -1,3 +1,3 @@
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://maison-fete.vercel.app"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://lancasterdecorators.com"
 ).replace(/\/$/, "");

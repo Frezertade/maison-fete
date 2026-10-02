@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-5 py-16 md:px-8">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
-            <a href="#top" aria-label="Maison Fête home">
+            <a href="#top" aria-label="Lancaster Decorators home">
               <Logo theme="dark" variant="full" />
             </a>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/60">
@@ -51,13 +51,13 @@ export default function Footer() {
         </div>
 
         <p className="mt-12 max-w-3xl text-[12px] leading-relaxed text-cream/45">
-          Maison Fête is a referral service. We connect customers with
+          Lancaster Decorators is a referral service. We connect customers with
           independent décor, interior styling, and event professionals in
           Lancaster County, PA; services are performed and priced by those
           independent businesses.
         </p>
         <div className="mt-8 flex flex-col items-start justify-between gap-4 border-t border-soft-white/10 pt-8 text-[11px] uppercase tracking-[0.16em] text-cream/40 md:flex-row md:items-center">
-          <p>© {new Date().getFullYear()} Maison Fête. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Lancaster Decorators. All rights reserved.</p>
           <p>Home &amp; Event Décor · Lancaster, Pennsylvania</p>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import LeadForm from "@/components/LeadForm";
+import { Monogram } from "@/components/Logo";
 
 export default function Hero() {
   return (
@@ -29,13 +30,9 @@ export default function Hero() {
         className="pointer-events-none absolute right-[-6%] top-[12%] hidden w-[min(42vw,420px)] opacity-[0.18] md:block lg:hidden"
         aria-hidden
       >
-        <Image
-          src="/images/logo/monogram-dark.jpg"
-          alt=""
-          width={420}
-          height={420}
+        <Monogram
+          theme="dark"
           className="h-auto w-full rounded-full mix-blend-screen"
-          priority
         />
       </div>
 

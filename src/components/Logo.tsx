@@ -1,4 +1,43 @@
-import Image from "next/image";
+/**
+ * Lancaster Decorators "LD" monogram, drawn in code so no raster asset carries
+ * the brand name.
+ */
+export function Monogram({
+  theme = "light",
+  className = "",
+  title,
+}: {
+  theme?: "dark" | "light";
+  className?: string;
+  title?: string;
+}) {
+  const bg = theme === "dark" ? "#231814" : "#f7f1e5";
+  const fg = theme === "dark" ? "#decca6" : "#b2945c";
+  return (
+    <svg
+      viewBox="0 0 100 100"
+      className={className}
+      role={title ? "img" : undefined}
+      aria-label={title}
+      aria-hidden={title ? undefined : true}
+    >
+      <circle cx="50" cy="50" r="50" fill={bg} />
+      <circle cx="50" cy="50" r="44" fill="none" stroke={fg} strokeOpacity="0.35" strokeWidth="0.8" />
+      <text
+        x="50"
+        y="51"
+        textAnchor="middle"
+        dominantBaseline="central"
+        fill={fg}
+        fontSize="40"
+        letterSpacing="-1"
+        style={{ fontFamily: "var(--font-cormorant), Georgia, serif", fontWeight: 600 }}
+      >
+        LD
+      </text>
+    </svg>
+  );
+}
 
 type LogoProps = {
   /** Visual theme for contrast against page background */
@@ -10,7 +49,7 @@ type LogoProps = {
 };
 
 /**
- * Maison Fête brand logo.
+ * Lancaster Decorators brand logo.
  * - full: monogram mark + wordmark (header default)
  * - mark: monogram only (compact / mobile icon)
  * - wordmark: text-focused lockup
@@ -21,21 +60,13 @@ export default function Logo({
   className = "",
   priority = false,
 }: LogoProps) {
-  const monogramSrc =
-    theme === "dark"
-      ? "/images/logo/monogram-dark.jpg"
-      : "/images/logo/monogram-light.jpg";
-
   if (variant === "mark") {
     return (
       <span className={`inline-flex shrink-0 ${className}`}>
-        <Image
-          src={monogramSrc}
-          alt="Maison Fête"
-          width={48}
-          height={48}
-          priority={priority}
-          className="h-10 w-10 rounded-full object-cover ring-1 ring-champagne/30 md:h-11 md:w-11"
+        <Monogram
+          theme={theme}
+          title="Lancaster Decorators"
+          className="h-10 w-10 rounded-full ring-1 ring-champagne/30 md:h-11 md:w-11"
         />
       </span>
     );
@@ -49,11 +80,11 @@ export default function Logo({
             theme === "dark" ? "text-soft-white" : "text-espresso"
           }`}
         >
-          Maison{" "}
+          Lancaster{" "}
           <span
             className={`italic ${theme === "dark" ? "text-champagne" : "text-gold"}`}
           >
-            Fête
+            Decorators
           </span>
         </span>
         <span
@@ -72,32 +103,27 @@ export default function Logo({
     <span
       className={`inline-flex items-center gap-2.5 md:gap-3 ${className}`}
     >
-      <Image
-        src={monogramSrc}
-        alt=""
-        width={56}
-        height={56}
-        priority={priority}
-        className={`h-11 w-11 shrink-0 rounded-full object-cover shadow-sm md:h-12 md:w-12 ${
+      <Monogram
+        theme={theme}
+        className={`h-11 w-11 shrink-0 rounded-full shadow-sm md:h-12 md:w-12 ${
           theme === "dark"
             ? "ring-1 ring-champagne/40"
             : "ring-1 ring-espresso/10"
         }`}
-        aria-hidden
       />
       <span className="flex min-w-0 flex-col leading-none">
         <span
-          className={`font-display text-[1.35rem] tracking-[0.06em] transition-colors duration-300 md:text-[1.55rem] ${
+          className={`whitespace-nowrap font-display text-[1.2rem] tracking-[0.06em] sm:text-[1.35rem] transition-colors duration-300 md:text-[1.55rem] ${
             theme === "dark" ? "text-soft-white" : "text-espresso"
           }`}
         >
-          Maison{" "}
+          Lancaster{" "}
           <span
             className={`italic ${
               theme === "dark" ? "text-champagne" : "text-gold"
             }`}
           >
-            Fête
+            Decorators
           </span>
         </span>
         <span
@@ -114,13 +140,49 @@ export default function Logo({
 
 /** Decorative seal for about / footer moments */
 export function LogoSeal({ className = "" }: { className?: string }) {
+  const gold = "#b0965f";
+  const font = { fontFamily: "var(--font-cormorant), Georgia, serif" };
   return (
-    <Image
-      src="/images/logo/seal.jpg"
-      alt="Maison Fête — Est. Lancaster"
-      width={280}
-      height={280}
-      className={`h-auto w-full rounded-full object-contain ${className}`}
-    />
+    <svg
+      viewBox="0 0 1024 1024"
+      role="img"
+      aria-label="Lancaster Decorators — Lancaster County, PA"
+      className={`block h-auto w-full rounded-full ${className}`}
+    >
+      <defs>
+        <clipPath id="ld-seal-inner">
+          <circle cx="513" cy="513" r="218" />
+        </clipPath>
+        <path id="ld-seal-top" d="M 231 513 A 282 282 0 0 1 795 513" />
+        <path id="ld-seal-bottom" d="M 208 513 A 305 305 0 0 0 818 513" />
+      </defs>
+      <circle cx="512" cy="512" r="512" fill="#f8f8f8" />
+      <circle cx="513" cy="513" r="352" fill="#f0ebe0" />
+      <circle cx="513" cy="513" r="346" fill="none" stroke={gold} strokeWidth="9" />
+      <circle cx="513" cy="513" r="330" fill="none" stroke={gold} strokeWidth="2" />
+      <circle cx="513" cy="513" r="232" fill="none" stroke={gold} strokeWidth="2" strokeDasharray="2 6" />
+      <circle cx="513" cy="513" r="222" fill="#f5f2ea" stroke={gold} strokeWidth="2" />
+      {/* Peony illustration from the original seal artwork (inner circle only) */}
+      <image
+        href="/images/logo/seal.jpg"
+        x="0"
+        y="0"
+        width="1024"
+        height="1024"
+        clipPath="url(#ld-seal-inner)"
+      />
+      <text fill={gold} fontSize="56" fontWeight="600" letterSpacing="5" style={font}>
+        <textPath href="#ld-seal-top" startOffset="50%" textAnchor="middle">
+          LANCASTER DECORATORS
+        </textPath>
+      </text>
+      <text fill={gold} fontSize="40" fontWeight="500" letterSpacing="7" style={font}>
+        <textPath href="#ld-seal-bottom" startOffset="50%" textAnchor="middle">
+          LANCASTER COUNTY · PA
+        </textPath>
+      </text>
+      <circle cx="198" cy="513" r="6" fill={gold} />
+      <circle cx="828" cy="513" r="6" fill={gold} />
+    </svg>
   );
 }

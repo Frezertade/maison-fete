@@ -50,7 +50,7 @@ export default function About() {
               <LogoSeal className="h-20 w-20" />
             </div>
             <p className="text-[11px] uppercase tracking-[0.3em] text-gold">
-              Why Maison Fête
+              Why Lancaster Decorators
             </p>
             <h2 className="mt-3 font-display text-4xl leading-tight text-espresso md:text-5xl">
               Lancaster’s décor network,
@@ -58,7 +58,7 @@ export default function About() {
               <span className="italic text-rose">not just one studio</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-warm-gray">
-              Maison Fête connects Lancaster County homeowners, hosts, and
+              Lancaster Decorators connects Lancaster County homeowners, hosts, and
               businesses with independent décor and interior styling
               professionals we know and trust. Instead of calling around, you
               send one request and get matched with the right pro for your

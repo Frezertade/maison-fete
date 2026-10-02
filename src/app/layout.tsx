@@ -20,8 +20,8 @@ const figtree = Figtree({
 
 export const metadata: Metadata = {
   title: {
-    default: "Lancaster PA Home & Event Décor | Free Quotes | Maison Fête",
-    template: "%s | Maison Fête",
+    default: "Lancaster PA Home & Event Décor | Free Quotes | Lancaster Decorators",
+    template: "%s | Lancaster Decorators",
   },
   description:
     "Get matched with vetted Lancaster County décor pros for interior styling, holiday décor, home staging, weddings, and parties. Free, no-obligation quotes.",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     url: "/",
     type: "website",
     locale: "en_US",
-    siteName: "Maison Fête",
+    siteName: "Lancaster Decorators",
     images: [
       {
         url: "/images/hero-wedding.jpg",
