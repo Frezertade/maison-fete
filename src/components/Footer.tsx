@@ -41,19 +41,8 @@ export default function Footer() {
             <ul className="mt-4 space-y-2 text-sm text-cream/70">
               <li>{site.address}</li>
               <li>
-                <a
-                  href={`mailto:${site.email}`}
-                  className="hover:text-champagne"
-                >
-                  {site.email}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`tel:${site.phone.replace(/\D/g, "")}`}
-                  className="hover:text-champagne"
-                >
-                  {site.phone}
+                <a href="#contact" className="hover:text-champagne">
+                  Request free décor quotes →
                 </a>
               </li>
               <li className="pt-2 text-cream/50">{site.serviceArea}</li>
@@ -61,9 +50,15 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-soft-white/10 pt-8 text-[11px] uppercase tracking-[0.16em] text-cream/40 md:flex-row md:items-center">
+        <p className="mt-12 max-w-3xl text-[12px] leading-relaxed text-cream/45">
+          Maison Fête is a referral service. We connect customers with
+          independent décor, interior styling, and event professionals in
+          Lancaster County, PA; services are performed and priced by those
+          independent businesses.
+        </p>
+        <div className="mt-8 flex flex-col items-start justify-between gap-4 border-t border-soft-white/10 pt-8 text-[11px] uppercase tracking-[0.16em] text-cream/40 md:flex-row md:items-center">
           <p>© {new Date().getFullYear()} Maison Fête. All rights reserved.</p>
-          <p>Event Décor · Lancaster, Pennsylvania</p>
+          <p>Home &amp; Event Décor · Lancaster, Pennsylvania</p>
         </div>
       </div>
     </footer>

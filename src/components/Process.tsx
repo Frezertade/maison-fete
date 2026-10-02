@@ -2,16 +2,16 @@ import { process } from "@/lib/content";
 
 export default function Process() {
   return (
-    <section id="process" data-nav-theme="dark" className="bg-espresso py-24 md:py-32">
+    <section id="how-it-works" data-nav-theme="dark" className="bg-espresso py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="max-w-2xl">
           <p className="text-[11px] uppercase tracking-[0.3em] text-champagne">
             How It Works
           </p>
           <h2 className="mt-3 font-display text-4xl text-soft-white md:text-5xl">
-            From first spark
+            One request.
             <br />
-            <span className="italic text-champagne">to final petal</span>
+            <span className="italic text-champagne">The right local pro.</span>
           </h2>
         </div>
 
@@ -32,6 +32,14 @@ export default function Process() {
               </p>
             </div>
           ))}
+        </div>
+        <div className="mt-12">
+          <a
+            href="#contact"
+            className="inline-flex rounded-full bg-champagne px-7 py-3.5 text-[12px] font-medium uppercase tracking-[0.2em] text-espresso transition-all hover:bg-gold"
+          >
+            Start My Free Request
+          </a>
         </div>
       </div>
     </section>

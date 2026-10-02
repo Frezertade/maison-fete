@@ -1,4 +1,5 @@
 import Image from "next/image";
+import LeadForm from "@/components/LeadForm";
 
 export default function Hero() {
   return (
@@ -25,7 +26,7 @@ export default function Hero() {
 
       {/* Subtle brand monogram watermark */}
       <div
-        className="pointer-events-none absolute right-[-6%] top-[12%] hidden w-[min(42vw,420px)] opacity-[0.18] md:block"
+        className="pointer-events-none absolute right-[-6%] top-[12%] hidden w-[min(42vw,420px)] opacity-[0.18] md:block lg:hidden"
         aria-hidden
       >
         <Image
@@ -38,40 +39,41 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-5 pb-16 pt-32 md:px-8 md:pb-24">
+      <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-10 px-5 pb-16 pt-32 md:px-8 md:pb-24 lg:grid-cols-12 lg:items-end">
+        <div className="lg:col-span-7">
         <p className="animate-fade-up text-[11px] uppercase tracking-[0.35em] text-champagne/90 md:text-xs">
-          Event Décor Studio · Lancaster County
+          Home &amp; Event Décor · Lancaster County, PA
         </p>
-        <h1 className="animate-fade-up delay-100 mt-5 max-w-4xl font-display text-[3.1rem] leading-[0.95] tracking-tight text-soft-white sm:text-6xl md:text-7xl lg:text-[5.25rem]">
-          Spaces that feel
+        <h1 className="animate-fade-up delay-100 mt-5 max-w-4xl font-display text-[2.8rem] leading-[0.95] tracking-tight text-soft-white sm:text-6xl md:text-7xl lg:text-[4.75rem]">
+          Lancaster décor &amp; interior pros,
           <br />
-          <span className="italic text-champagne">unforgettable</span>
+          <span className="italic text-champagne">matched to you</span>
         </h1>
         <p className="animate-fade-up delay-200 mt-6 max-w-xl text-base leading-relaxed text-cream/85 md:text-lg">
-          Full-service decoration and styling for weddings, birthdays, baby
-          showers, graduations, and celebrations across Lancaster, PA — designed
-          to photograph beautifully and feel even better in person.
+          Interior styling, holiday décor, home staging, weddings, and parties
+          across Lancaster County. Tell us about your project once — we’ll
+          connect you with vetted local decorators. Free, no-obligation quotes.
         </p>
-        <div className="animate-fade-up delay-300 mt-10 flex flex-wrap items-center gap-4">
+        <div className="animate-fade-up delay-300 mt-10 flex flex-wrap items-center gap-4 lg:hidden">
           <a
             href="#contact"
-            className="rounded-full bg-champagne px-7 py-3.5 text-[12px] font-medium uppercase tracking-[0.2em] text-espresso transition-all hover:bg-gold hover:shadow-[0_12px_40px_rgba(201,168,124,0.35)]"
+            className="rounded-full bg-champagne px-7 py-3.5 text-[12px] font-medium uppercase tracking-[0.2em] text-espresso transition-all hover:bg-gold"
           >
-            Plan Your Event
+            Get Free Quotes
           </a>
           <a
             href="#gallery"
             className="rounded-full border border-soft-white/30 px-7 py-3.5 text-[12px] uppercase tracking-[0.2em] text-soft-white transition-all hover:border-soft-white hover:bg-soft-white/10"
           >
-            View Gallery
+            See Ideas
           </a>
         </div>
 
         <div className="animate-fade-up delay-400 mt-14 grid max-w-2xl grid-cols-3 gap-6 border-t border-soft-white/15 pt-8 text-soft-white/80">
           {[
-            { n: "250+", l: "Events Styled" },
-            { n: "12+", l: "Years Craft" },
-            { n: "5★", l: "Client Love" },
+            { n: "Free", l: "No-obligation quotes" },
+            { n: "Local", l: "Lancaster County pros" },
+            { n: "1 day", l: "Typical response" },
           ].map((stat) => (
             <div key={stat.l}>
               <div className="font-display text-2xl text-champagne md:text-3xl">
@@ -82,6 +84,19 @@ export default function Hero() {
               </div>
             </div>
           ))}
+        </div>
+        </div>
+
+        <div className="hidden lg:col-span-5 lg:block">
+          <div className="rounded-3xl bg-soft-white/95 p-6 shadow-2xl backdrop-blur">
+            <p className="font-display text-2xl text-espresso">
+              Get free décor quotes
+            </p>
+            <p className="mb-5 mt-1 text-sm text-warm-gray">
+              Takes 30 seconds · Lancaster County only
+            </p>
+            <LeadForm variant="compact" source="hero" />
+          </div>
         </div>
       </div>
 
