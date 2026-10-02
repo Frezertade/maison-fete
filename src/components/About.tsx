@@ -50,35 +50,35 @@ export default function About() {
               <LogoSeal className="h-20 w-20" />
             </div>
             <p className="text-[11px] uppercase tracking-[0.3em] text-gold">
-              Our Studio
+              Why Maison Fête
             </p>
             <h2 className="mt-3 font-display text-4xl leading-tight text-espresso md:text-5xl">
-              Design-led décor for
+              Lancaster’s décor network,
               <br />
-              <span className="italic text-rose">Lancaster celebrations</span>
+              <span className="italic text-rose">not just one studio</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-warm-gray">
-              Maison Fête is a full-service event decoration studio creating
-              refined, photogenic environments for life’s biggest moments. We
-              blend florals, textiles, balloons, lighting, and custom details
-              into cohesive experiences — tailored to your venue, story, and
-              style.
+              Maison Fête connects Lancaster County homeowners, hosts, and
+              businesses with independent décor and interior styling
+              professionals we know and trust. Instead of calling around, you
+              send one request and get matched with the right pro for your
+              style, budget, and timeline.
             </p>
             <p className="mt-4 text-base leading-relaxed text-warm-gray">
-              Based in the Lancaster, PA area, we travel throughout South
-              Central Pennsylvania for weddings, private parties, and corporate
-              events. Whether you need a statement arch or a complete room
-              transformation, we handle design through teardown.
+              Our partners cover Lancaster, Lititz, Ephrata, Manheim, Mount Joy,
+              Elizabethtown, Strasburg, and the rest of South Central
+              Pennsylvania — from a single-room refresh or holiday install to a
+              full wedding reception.
             </p>
 
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">
               {[
-                "Custom design concepts",
-                "Florals & centerpieces",
-                "Balloon installations",
-                "Backdrops & photo moments",
-                "Tablescapes & linens",
-                "Setup & breakdown",
+                "Interior & room styling",
+                "Holiday & seasonal installs",
+                "Home staging for sellers",
+                "Wedding & party décor",
+                "Free, no-obligation quotes",
+                "Vetted local professionals",
               ].map((item) => (
                 <li
                   key={item}
