@@ -8,17 +8,17 @@ export default function Services() {
         <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
           <div className="max-w-2xl">
             <p className="text-[11px] uppercase tracking-[0.3em] text-gold">
-              What We Style
+              Home &amp; Event Décor Services
             </p>
             <h2 className="mt-3 font-display text-4xl leading-tight text-espresso md:text-5xl lg:text-6xl">
-              Every celebration,
+              Lancaster décor pros
               <br />
-              <span className="italic text-rose">beautifully set</span>
+              <span className="italic text-rose">for every space</span>
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-warm-gray md:text-base">
-            From intimate proposals to full ballroom receptions — we design,
-            install, and tear down so you can host without the stress.
+            Living rooms to ballrooms — tell us what you’re planning and we’ll
+            match you with a vetted local decorator. Free quotes, no obligation.
           </p>
         </div>
 

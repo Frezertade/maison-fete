@@ -1,16 +1,67 @@
 export const site = {
   name: "Maison Fête",
-  tagline: "Luxury Event Décor · Lancaster, PA",
+  tagline: "Home & Event Décor · Lancaster, PA",
   description:
-    "Full-service event decoration and styling for weddings, birthdays, baby showers, graduations, and celebrations across Lancaster County, Pennsylvania.",
-  phone: "(717) 555-0148",
-  email: "hello@maisonfete.com",
-  address: "Lancaster, Pennsylvania",
-  serviceArea: "Lancaster · York · Harrisburg · Reading · Hershey",
-  hours: "Mon–Sat by appointment",
+    "Lancaster County’s décor and interior styling network. Tell us about your home, holiday, or event and get matched with vetted local décor pros — free, no obligation.",
+  address: "Lancaster County, Pennsylvania",
+  serviceArea: "Lancaster · Lititz · Ephrata · Manheim · Mount Joy · Elizabethtown · Strasburg · York · Hershey",
+  hours: "Requests answered within 1 business day",
 };
 
+export const projectTypes = [
+  "Interior design / room styling",
+  "Home décor refresh",
+  "Holiday & seasonal home décor",
+  "Home staging (selling)",
+  "Window treatments / soft furnishings",
+  "Wedding décor",
+  "Party or shower décor",
+  "Corporate / venue décor",
+  "Other",
+];
+
+export const budgets = [
+  "Under $500",
+  "$500 – $1,500",
+  "$1,500 – $5,000",
+  "$5,000 – $15,000",
+  "$15,000+",
+  "Not sure yet",
+];
+
+export const timelines = [
+  "ASAP (within 2 weeks)",
+  "2 – 4 weeks",
+  "1 – 3 months",
+  "3+ months",
+  "Just exploring",
+];
+
 export const services = [
+  {
+    slug: "interior-styling",
+    title: "Interior Styling",
+    subtitle: "Rooms that finally feel finished",
+    description:
+      "Living rooms, bedrooms, kitchens, and entryways — furniture layout, color, lighting, art, rugs, and accessories pulled together by a local interior stylist.",
+    image: "/images/place-setting.jpg",
+  },
+  {
+    slug: "holiday-decor",
+    title: "Holiday & Seasonal Décor",
+    subtitle: "Christmas, fall & more — installed for you",
+    description:
+      "Mantels, trees, garlands, porches, and tablescapes styled and installed (and taken down) by Lancaster décor pros.",
+    image: "/images/holiday-gala.jpg",
+  },
+  {
+    slug: "home-staging",
+    title: "Home Staging",
+    subtitle: "Sell faster across Lancaster County",
+    description:
+      "Listing-ready staging and styling for sellers and realtors — photogenic rooms that help buyers picture home.",
+    image: "/images/anniversary.jpg",
+  },
   {
     slug: "weddings",
     title: "Weddings",
@@ -183,23 +234,23 @@ export const gallery = [
 export const process = [
   {
     step: "01",
-    title: "Inquire",
-    text: "Share your date, venue, vision, and guest count. We’ll confirm availability and send a tailored consultation.",
+    title: "Tell us",
+    text: "Share your project, ZIP, budget, and timeline in under a minute — home, holiday, or event.",
   },
   {
     step: "02",
-    title: "Design",
-    text: "Moodboards, color stories, florals, balloons, linens, and layouts — refined until it feels unmistakably you.",
+    title: "Get matched",
+    text: "We hand-pick up to two vetted Lancaster-area décor pros who fit your style, budget, and dates.",
   },
   {
     step: "03",
-    title: "Plan",
-    text: "We coordinate rentals, timelines, delivery, and setup so your day feels effortless from the first guest arrival.",
+    title: "Compare quotes",
+    text: "Pros reach out with ideas and pricing. Free, no obligation — choose the one you love.",
   },
   {
     step: "04",
-    title: "Style",
-    text: "Our team installs every detail on-site — then returns for teardown so you can simply celebrate.",
+    title: "Enjoy your space",
+    text: "Your decorator designs, installs, and (for events and holidays) takes everything down.",
   },
 ];
 
@@ -226,8 +277,8 @@ export const testimonials = [
 
 export const nav = [
   { href: "#services", label: "Services" },
+  { href: "#how-it-works", label: "How It Works" },
   { href: "#gallery", label: "Gallery" },
   { href: "#about", label: "About" },
-  { href: "#process", label: "Process" },
   { href: "#contact", label: "Contact" },
 ];

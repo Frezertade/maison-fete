@@ -115,7 +115,7 @@ export default function Header() {
             href="#contact"
             className={`rounded-full border px-5 py-2.5 text-[12px] font-medium uppercase tracking-[0.2em] transition-all duration-300 hover:shadow-lg ${ctaClass}`}
           >
-            Book Consult
+            Get Free Quotes
           </a>
         </nav>
 
@@ -168,12 +168,10 @@ export default function Header() {
             onClick={() => setOpen(false)}
             className="mt-10 inline-flex w-fit rounded-full bg-espresso px-6 py-3 text-[12px] uppercase tracking-[0.2em] text-ivory"
           >
-            Book Consult
+            Get Free Quotes
           </a>
           <p className="mt-10 text-sm tracking-wide text-warm-gray">
-            {site.email}
-            <br />
-            {site.phone}
+            {site.serviceArea}
           </p>
         </div>
       </div>
