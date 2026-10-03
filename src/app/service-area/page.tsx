@@ -19,15 +19,15 @@ export const metadata = pageMetadata({
 const faqs = [
   {
     q: "Do you serve my town?",
-    a: "We take requests from anywhere in Lancaster County. Enter your ZIP code in the form and we’ll match you with pros who travel to your area. Projects just outside the county are fine to submit too; we’ll let you know if no one can cover it.",
+    a: "We decorate events throughout Lancaster County. Enter your ZIP code in the form. Events just outside the county are fine to submit too; we’ll let you know if we can travel there.",
   },
   {
-    q: "Do decorators charge for delivery or travel?",
-    a: "Some do, depending on distance. Delivery and travel fees are set by each independent decorator, so ask when you compare quotes.",
+    q: "Do you charge for delivery or travel?",
+    a: "Any delivery or travel cost for a distant venue is spelled out in your quote before you book, so there are no surprises.",
   },
   {
-    q: "Is Lancaster Decorators a local business with a showroom?",
-    a: "No. We’re a free online referral service for Lancaster County. The event decorators, stylists and balloon artists we refer are independent local businesses.",
+    q: "Do you do the decorating yourselves?",
+    a: "Yes. Lancaster Decorators designs, sets up and takes down your décor. If we’re booked on your date or a request is outside our specialty, we’ll tell you up front and can connect you with a vetted local decorator.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function ServiceAreaPage() {
         eyebrow="Service Area"
         title="Event Decorators Across Lancaster County, PA"
         intro={[
-          "We match families, churches and businesses with independent event decorators, stylists and balloon artists throughout Lancaster County, for graduation parties, weddings, baby showers, birthdays, church events and more. Below are some of the towns we cover, with ZIP codes and the events that tend to come up.",
+          "Lancaster Decorators decorates graduation parties, weddings, baby showers, birthdays, church events and more throughout Lancaster County. Below are some of the towns we cover, with ZIP codes and the events that are a good fit.",
         ]}
         image="/images/proposal-setup.jpg"
         imageAlt="Garden pathway styled with florals and candles"
@@ -65,7 +65,7 @@ export default function ServiceAreaPage() {
           ))}
         </div>
         <p className="mx-auto mt-10 max-w-3xl px-5 text-center text-sm text-warm-gray">
-          Don’t see your town? We also take requests from Columbia, Denver, Akron, New Holland, Quarryville and the rest of Lancaster County. Just enter your ZIP code.
+          Don’t see your town? We also decorate in Columbia, Denver, Akron, New Holland, Quarryville and the rest of Lancaster County. Just enter your ZIP code.
         </p>
       </section>
       <FaqSection faqs={faqs} heading="Service area FAQ" />

@@ -17,8 +17,8 @@ export default function Contact() {
             </h2>
             <p className="mt-5 text-base leading-relaxed text-warm-gray">
               Graduation party, wedding, shower, birthday or church event: share
-              a few details and we’ll match you with up to two Lancaster-area
-              event decorators. Free, no obligation.
+              a few details and we’ll reply with ideas and a free,
+              no-obligation quote.
             </p>
 
             <div className="mt-10 space-y-5 text-sm">

@@ -9,9 +9,9 @@ export default function Process() {
             How It Works
           </p>
           <h2 className="mt-3 font-display text-4xl text-soft-white md:text-5xl">
-            One request.
+            Tell us your date.
             <br />
-            <span className="italic text-champagne">The right local pro.</span>
+            <span className="italic text-champagne">We handle the décor.</span>
           </h2>
         </div>
 

@@ -20,7 +20,7 @@ export default function Services() {
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-warm-gray md:text-base">
             Backyard grad parties to church banquets: tell us what you’re
-            planning and we’ll match you with a local event decorator. Free
+            planning and we’ll design, set up and take down the décor. Free
             quotes, no obligation.
           </p>
         </div>

@@ -6,7 +6,7 @@ export default function StickyCta() {
         href="#contact"
         className="block w-full rounded-full bg-espresso px-6 py-3.5 text-center text-[12px] font-medium uppercase tracking-[0.2em] text-ivory"
       >
-        Get Free Décor Quotes
+        Get a Free Décor Quote
       </a>
     </div>
   );

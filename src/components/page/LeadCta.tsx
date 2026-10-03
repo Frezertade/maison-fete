@@ -3,8 +3,8 @@ import { site } from "@/lib/content";
 
 /** Lead form section used on inner pages (anchor: #contact). */
 export default function LeadCta({
-  heading = "Get free quotes from Lancaster décor pros",
-  text = "Share a few details and we’ll match you with up to two vetted, independent Lancaster County pros. Free, no obligation.",
+  heading = "Get a free event décor quote",
+  text = "Share a few details and we’ll reply with ideas and a free, no-obligation quote.",
   projectType,
   source,
 }: {
