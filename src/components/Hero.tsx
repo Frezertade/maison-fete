@@ -47,17 +47,17 @@ export default function Hero() {
           <span className="italic text-champagne">styled for your celebration</span>
         </h1>
         <p className="animate-fade-up delay-200 mt-6 max-w-xl text-base leading-relaxed text-cream/85 md:text-lg">
-          Graduation parties, weddings, baby showers, birthdays and church
-          events across Lancaster County. Tell us about your event once and
-          we’ll connect you with local event decorators. Free, no-obligation
-          quotes.
+          Lancaster Decorators designs, sets up and takes down décor for
+          graduation parties, weddings, baby showers, birthdays and church
+          events across Lancaster County. Tell us about your event for ideas
+          and a free, no-obligation quote.
         </p>
         <div className="animate-fade-up delay-300 mt-10 flex flex-wrap items-center gap-4 lg:hidden">
           <a
             href="#contact"
             className="rounded-full bg-champagne px-7 py-3.5 text-[12px] font-medium uppercase tracking-[0.2em] text-espresso transition-all hover:bg-gold"
           >
-            Get Free Quotes
+            Get a Free Quote
           </a>
           <a
             href="#gallery"
@@ -70,7 +70,7 @@ export default function Hero() {
         <div className="animate-fade-up delay-400 mt-14 grid max-w-2xl grid-cols-3 gap-6 border-t border-soft-white/15 pt-8 text-soft-white/80">
           {[
             { n: "Free", l: "No-obligation quotes" },
-            { n: "Local", l: "Lancaster County decorators" },
+            { n: "Local", l: "Lancaster County based" },
             { n: "1 day", l: "Typical response" },
           ].map((stat) => (
             <div key={stat.l}>
@@ -88,7 +88,7 @@ export default function Hero() {
         <div className="hidden lg:col-span-5 lg:block">
           <div className="rounded-3xl bg-soft-white/95 p-6 shadow-2xl backdrop-blur">
             <p className="font-display text-2xl text-espresso">
-              Get free event décor quotes
+              Get a free event décor quote
             </p>
             <p className="mb-5 mt-1 text-sm text-warm-gray">
               Takes 30 seconds · Lancaster County only

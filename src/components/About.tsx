@@ -53,22 +53,23 @@ export default function About() {
               Why Lancaster Decorators
             </p>
             <h2 className="mt-3 font-display text-4xl leading-tight text-espresso md:text-5xl">
-              Lancaster’s event décor network,
+              Event décor, designed
               <br />
-              <span className="italic text-rose">not just one studio</span>
+              <span className="italic text-rose">and installed by us</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-warm-gray">
-              Lancaster Decorators connects Lancaster County families, churches
-              and businesses with independent event decorators, stylists and
-              balloon artists. Instead of calling around, you
-              send one request and get matched with the right pro for your
-              style, budget, and timeline.
+              Lancaster Decorators is a Lancaster County event decorator. We
+              design the look, bring the décor, set it up before your guests
+              arrive and take it all down afterward, for families, churches and
+              businesses.
             </p>
             <p className="mt-4 text-base leading-relaxed text-warm-gray">
-              Our partners cover Lancaster, Lititz, Ephrata, Manheim, Mount Joy,
-              Elizabethtown, Strasburg, and the rest of South Central
-              Pennsylvania, from a backyard graduation party or baby shower to a
-              church anniversary banquet or a full wedding reception.
+              We decorate in Lancaster, Lititz, Ephrata, Manheim, Mount Joy,
+              Elizabethtown, Strasburg and across Lancaster County, from a
+              backyard graduation party or baby shower to a church anniversary
+              banquet or a full wedding reception. If we’re already booked on
+              your date or a request is outside our specialty, we’ll tell you up
+              front and can connect you with a vetted local decorator.
             </p>
 
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -78,7 +79,7 @@ export default function About() {
                 "Birthday & quinceañera décor",
                 "Church event decorations",
                 "Free, no-obligation quotes",
-                "Vetted local professionals",
+                "Setup & takedown included",
               ].map((item) => (
                 <li
                   key={item}

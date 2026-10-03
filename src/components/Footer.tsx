@@ -60,7 +60,7 @@ export default function Footer() {
               <li>{site.address}</li>
               <li>
                 <a href="#contact" className="hover:text-champagne">
-                  Request free event décor quotes →
+                  Request a free event décor quote →
                 </a>
               </li>
               <li className="pt-2 text-cream/50">{site.serviceArea}</li>
@@ -69,10 +69,10 @@ export default function Footer() {
         </div>
 
         <p className="mt-12 max-w-3xl text-[12px] leading-relaxed text-cream/45">
-          Lancaster Decorators is a referral service. We connect customers with
-          independent event decorators, stylists and balloon artists in
-          Lancaster County, PA; services are performed and priced by those
-          independent businesses.
+          Lancaster Decorators designs and installs event décor in Lancaster
+          County, PA. If we’re booked on your date or a request is outside our
+          specialty, we may refer you to an independent local decorator, who
+          quotes and performs that work separately.
         </p>
         <div className="mt-8 flex flex-col items-start justify-between gap-4 border-t border-soft-white/10 pt-8 text-[11px] uppercase tracking-[0.16em] text-cream/40 md:flex-row md:items-center">
           <p>© {new Date().getFullYear()} Lancaster Decorators. All rights reserved.</p>
