@@ -4,7 +4,8 @@ export const site = {
   description:
     "Lancaster County’s décor and interior styling network. Tell us about your home, holiday, or event and get matched with vetted local décor pros — free, no obligation.",
   address: "Lancaster County, Pennsylvania",
-  serviceArea: "Lancaster · Lititz · Ephrata · Manheim · Mount Joy · Elizabethtown · Strasburg · York · Hershey",
+  serviceArea:
+    "Lancaster · Lititz · Ephrata · Manheim · Mount Joy · Elizabethtown · Strasburg · Leola · Millersville · Willow Street",
   hours: "Requests answered within 1 business day",
 };
 
@@ -40,30 +41,34 @@ export const timelines = [
 export const services = [
   {
     slug: "interior-styling",
+    href: "/interior-decorating",
     title: "Interior Styling",
     subtitle: "Rooms that finally feel finished",
     description:
       "Living rooms, bedrooms, kitchens, and entryways — furniture layout, color, lighting, art, rugs, and accessories pulled together by a local interior stylist.",
-    image: "/images/place-setting.jpg",
+    image: "/images/designer-florals.jpg",
   },
   {
     slug: "holiday-decor",
+    href: "/holiday-decorating",
     title: "Holiday & Seasonal Décor",
     subtitle: "Christmas, fall & more — installed for you",
     description:
       "Mantels, trees, garlands, porches, and tablescapes styled and installed (and taken down) by Lancaster décor pros.",
-    image: "/images/holiday-gala.jpg",
+    image: "/images/bridal-shower.jpg",
   },
   {
     slug: "home-staging",
+    href: "/home-staging",
     title: "Home Staging",
     subtitle: "Sell faster across Lancaster County",
     description:
       "Listing-ready staging and styling for sellers and realtors — photogenic rooms that help buyers picture home.",
-    image: "/images/anniversary.jpg",
+    image: "/images/place-setting.jpg",
   },
   {
     slug: "weddings",
+    href: "/event-decor",
     title: "Weddings",
     subtitle: "Ceremony & reception artistry",
     description:
@@ -73,6 +78,7 @@ export const services = [
   },
   {
     slug: "birthdays",
+    href: "/balloon-decor",
     title: "Birthdays",
     subtitle: "Milestone celebrations",
     description:
@@ -81,6 +87,7 @@ export const services = [
   },
   {
     slug: "baby-showers",
+    href: "/event-decor",
     title: "Baby Showers",
     subtitle: "Soft, intentional, unforgettable",
     description:
@@ -89,6 +96,7 @@ export const services = [
   },
   {
     slug: "graduations",
+    href: "/balloon-decor",
     title: "Graduations",
     subtitle: "Celebrate the next chapter",
     description:
@@ -97,6 +105,7 @@ export const services = [
   },
   {
     slug: "engagements",
+    href: "/event-decor",
     title: "Engagements & Proposals",
     subtitle: "Moments meant for forever",
     description:
@@ -106,6 +115,7 @@ export const services = [
   },
   {
     slug: "corporate",
+    href: "/event-decor",
     title: "Corporate & Galas",
     subtitle: "Elevated brand experiences",
     description:
@@ -159,14 +169,14 @@ export const gallery = [
   },
   {
     src: "/images/bridal-shower.jpg",
-    alt: "Bridal shower dessert and champagne station",
-    category: "Showers",
+    alt: "Candlelit anniversary dinner table with red roses",
+    category: "Anniversaries",
     span: "md",
   },
   {
     src: "/images/anniversary.jpg",
-    alt: "Romantic anniversary dinner table",
-    category: "Anniversaries",
+    alt: "Blush bridal shower dessert table with macaron tower",
+    category: "Showers",
     span: "sm",
   },
   {
@@ -207,8 +217,8 @@ export const gallery = [
   },
   {
     src: "/images/sweet-sixteen.jpg",
-    alt: "Rose gold sweet sixteen celebration",
-    category: "Birthdays",
+    alt: "Candlelit ballroom reception with floral centerpieces",
+    category: "Receptions",
     span: "md",
   },
   {
@@ -219,8 +229,8 @@ export const gallery = [
   },
   {
     src: "/images/holiday-gala.jpg",
-    alt: "Winter holiday gala tablescape",
-    category: "Corporate",
+    alt: "Rose gold sweet sixteen backdrop with neon sign",
+    category: "Birthdays",
     span: "md",
   },
   {
@@ -254,31 +264,19 @@ export const process = [
   },
 ];
 
-export const testimonials = [
-  {
-    quote:
-      "Lancaster Decorators transformed our barn wedding into something out of a magazine. Guests still talk about the ceiling florals.",
-    name: "Elena & Marcus",
-    event: "Wedding · Manheim, PA",
-  },
-  {
-    quote:
-      "Our daughter’s baby shower looked like a dream. Soft, elegant, and completely personal — worth every penny.",
-    name: "Priya R.",
-    event: "Baby Shower · Lancaster",
-  },
-  {
-    quote:
-      "They handled our company gala end-to-end. Professional, creative, and the ballroom looked absolutely stunning.",
-    name: "David K.",
-    event: "Corporate Gala · Hershey",
-  },
+export const nav = [
+  { href: "/#services", label: "Services" },
+  { href: "/#how-it-works", label: "How It Works" },
+  { href: "/service-area", label: "Service Area" },
+  { href: "/blog", label: "Guides" },
+  { href: "#contact", label: "Contact" },
 ];
 
-export const nav = [
-  { href: "#services", label: "Services" },
-  { href: "#how-it-works", label: "How It Works" },
-  { href: "#gallery", label: "Gallery" },
-  { href: "#about", label: "About" },
-  { href: "#contact", label: "Contact" },
+/** Dedicated service pages (used in header/footer/internal links). */
+export const serviceLinks = [
+  { href: "/interior-decorating", label: "Interior Decorating" },
+  { href: "/home-staging", label: "Home Staging" },
+  { href: "/holiday-decorating", label: "Holiday & Christmas Decorating" },
+  { href: "/event-decor", label: "Wedding & Event Décor" },
+  { href: "/balloon-decor", label: "Balloon Décor" },
 ];

@@ -7,6 +7,8 @@ type Props = {
   /** "compact" is used in the hero card; "full" in the contact section. */
   variant?: "compact" | "full";
   source?: string;
+  /** Pre-selects a project type (e.g. on a service page). */
+  defaultProjectType?: string;
 };
 
 const field =
@@ -14,7 +16,11 @@ const field =
 const label =
   "mb-1.5 block text-[11px] uppercase tracking-[0.16em] text-warm-gray";
 
-export default function LeadForm({ variant = "full", source = "contact" }: Props) {
+export default function LeadForm({
+  variant = "full",
+  source = "contact",
+  defaultProjectType = "",
+}: Props) {
   const [state, setState] = useState<"idle" | "sending" | "done" | "error">(
     "idle",
   );
@@ -46,7 +52,7 @@ export default function LeadForm({ variant = "full", source = "contact" }: Props
   if (state === "done") {
     return (
       <div className="flex min-h-[320px] flex-col items-center justify-center text-center">
-        <span className="font-display text-4xl text-champagne">Merci</span>
+        <span className="font-display text-4xl text-champagne">Thank you</span>
         <h3 className="mt-3 font-display text-3xl text-espresso">
           Request received
         </h3>
@@ -103,7 +109,12 @@ export default function LeadForm({ variant = "full", source = "contact" }: Props
       </label>
       <label className="block text-sm">
         <span className={label}>Project type *</span>
-        <select required name="projectType" defaultValue="" className={field}>
+        <select
+          required
+          name="projectType"
+          defaultValue={projectTypes.includes(defaultProjectType) ? defaultProjectType : ""}
+          className={field}
+        >
           <option value="" disabled>
             Select project
           </option>
