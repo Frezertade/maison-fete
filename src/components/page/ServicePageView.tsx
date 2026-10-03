@@ -9,7 +9,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { towns } from "@/lib/towns";
 import { eventPagePaths, servicePageByPath } from "@/lib/service-pages";
-import { BUSINESS_ID, absoluteUrl } from "@/lib/seo";
+import { BUSINESS_ID, SITE_NAME, absoluteUrl } from "@/lib/seo";
 import type { ServicePage } from "@/lib/service-pages";
 
 export default function ServicePageView({ page }: { page: ServicePage }) {
@@ -113,9 +113,9 @@ export default function ServicePageView({ page }: { page: ServicePage }) {
           </div>
 
           <div>
-            <h2 className="font-display text-3xl text-espresso">Towns we cover for {page.name.toLowerCase()}</h2>
+            <h2 className="font-display text-3xl text-espresso">Where we decorate</h2>
             <p className="mt-4 leading-relaxed text-charcoal/85">
-              Throughout Lancaster County, including{" "}
+              We provide {page.name.toLowerCase()} throughout Lancaster County, including{" "}
               {towns.map((t, i) => (
                 <span key={t.slug}>
                   {t.name.replace(" (city)", "")}
@@ -134,7 +134,7 @@ export default function ServicePageView({ page }: { page: ServicePage }) {
 
       <FaqSection faqs={page.faqs} heading={`${page.name} in Lancaster: FAQ`} />
       <RelatedLinks paths={page.related} />
-      <LeadCta source={page.slug} projectType={page.projectType} heading={`Get free ${page.name.toLowerCase()} quotes`} text={`Tell us your date, venue, guest count and style, and we’ll match you with up to two independent Lancaster County decorators. Free, no obligation.`} />
+      <LeadCta source={page.slug} projectType={page.projectType} heading={`Get a free ${page.name.toLowerCase()} quote`} text={`Tell us your date, venue, guest count and style, and we’ll reply with ideas and a free, no-obligation quote.`} />
 
       <JsonLd
         data={{
@@ -144,7 +144,7 @@ export default function ServicePageView({ page }: { page: ServicePage }) {
           serviceType: page.name,
           description: page.description,
           url: absoluteUrl(page.path),
-          provider: { "@id": BUSINESS_ID },
+          provider: { "@id": BUSINESS_ID, "@type": "LocalBusiness", name: SITE_NAME },
           areaServed: [
             { "@type": "AdministrativeArea", name: "Lancaster County, PA" },
             ...towns.map((t) => ({ "@type": "City", name: `${t.name.replace(" (city)", "")}, PA` })),

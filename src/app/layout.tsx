@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     template: "%s | Lancaster Decorators",
   },
   description:
-    "Event decorations in Lancaster, PA: graduation parties, weddings, baby showers, birthdays and church events. Get matched with local event decorators. Free, no-obligation quotes.",
+    "Lancaster Decorators designs and installs event décor in Lancaster, PA: graduation parties, weddings, baby showers, birthdays and church events. Free, no-obligation quotes.",
   keywords: [
     "graduation party decorations Lancaster PA",
     "wedding decor Lancaster PA",
@@ -50,9 +50,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Event Decorations in Lancaster, PA — Free Quotes from Local Decorators",
+    title: "Event Decorations in Lancaster, PA — Lancaster Decorators",
     description:
-      "Graduation parties, weddings, baby showers, birthdays and church events across Lancaster County. One request, matched with local event decorators.",
+      "Event décor designed, set up and taken down for graduation parties, weddings, baby showers, birthdays and church events across Lancaster County.",
     url: "/",
     type: "website",
     locale: "en_US",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Event Decorations in Lancaster, PA — Free Quotes",
     description:
-      "Get matched with Lancaster County event decorators for graduations, weddings, showers, birthdays and church events.",
+      "Lancaster County event decorator for graduations, weddings, showers, birthdays and church events.",
     images: ["/images/hero-wedding.jpg"],
   },
   robots: { index: true, follow: true },

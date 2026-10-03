@@ -57,8 +57,8 @@ export default function LeadForm({
           Request received
         </h3>
         <p className="mt-3 max-w-sm text-sm text-warm-gray">
-          We’ll review your event and connect you with a Lancaster-area event
-          decorator — usually within 1 business day.
+          We’ll review your event and get back to you with ideas and a quote,
+          usually within 1 business day.
         </p>
         <button
           type="button"
@@ -170,9 +170,10 @@ export default function LeadForm({
           </p>
         )}
         <p className="mt-3 text-[11px] leading-relaxed text-warm-gray">
-          Free, no obligation. By submitting, you agree we may share your
-          request with up to 2 independent local event decorators who may
-          contact you by phone, text, or email about your event.
+          Free, no obligation. We’ll contact you by phone, text or email about
+          your event. If we’re booked on your date or it’s outside our
+          specialty, we may share your request with a vetted local decorator,
+          who may contact you directly.
         </p>
       </div>
     </form>

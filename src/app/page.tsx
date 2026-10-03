@@ -35,15 +35,15 @@ export default function Home() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "ProfessionalService",
+            "@type": "LocalBusiness",
             "@id": BUSINESS_ID,
             name: site.name,
             description: site.description,
             url: SITE_URL,
             logo: `${SITE_URL}/icon.svg`,
             image: `${SITE_URL}/images/hero-wedding.jpg`,
-            // Referral service with no storefront: service area only, no
-            // street address, phone, ratings or reviews.
+            // Service-area business with no storefront: service area only,
+            // no street address, phone, ratings or reviews.
             areaServed: [
               { "@type": "AdministrativeArea", name: "Lancaster County, PA" },
               ...towns.map((t) => ({
@@ -63,13 +63,14 @@ export default function Home() {
             ],
             hasOfferCatalog: {
               "@type": "OfferCatalog",
-              name: "Event decorating services (via independent local decorators)",
+              name: "Event decorating services",
               itemListElement: servicePages.map((p) => ({
                 "@type": "Offer",
                 itemOffered: {
                   "@type": "Service",
                   name: p.name,
                   url: `${SITE_URL}${p.path}`,
+                  provider: { "@id": BUSINESS_ID },
                 },
               })),
             },
