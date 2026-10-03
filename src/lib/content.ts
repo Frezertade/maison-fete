@@ -1,8 +1,8 @@
 export const site = {
   name: "Lancaster Decorators",
-  tagline: "Home & Event Décor · Lancaster, PA",
+  tagline: "Party & Event Décor · Lancaster, PA",
   description:
-    "Lancaster County’s décor and interior styling network. Tell us about your home, holiday, or event and get matched with vetted local décor pros — free, no obligation.",
+    "Lancaster County’s event decorating network. Tell us about your graduation party, wedding, baby shower, birthday or church event and get matched with local event decorators — free, no obligation.",
   address: "Lancaster County, Pennsylvania",
   serviceArea:
     "Lancaster · Lititz · Ephrata · Manheim · Mount Joy · Elizabethtown · Strasburg · Leola · Millersville · Willow Street",
@@ -10,15 +10,17 @@ export const site = {
 };
 
 export const projectTypes = [
-  "Interior design / room styling",
-  "Home décor refresh",
-  "Holiday & seasonal home décor",
-  "Home staging (selling)",
-  "Window treatments / soft furnishings",
+  "Graduation party décor",
   "Wedding décor",
-  "Party or shower décor",
-  "Corporate / venue décor",
-  "Other",
+  "Baby shower décor",
+  "Birthday party décor",
+  "Church event décor",
+  "Quinceañera / Sweet 16 décor",
+  "Bridal shower / engagement décor",
+  "Balloon décor",
+  "Holiday party décor",
+  "Corporate event décor",
+  "Other event",
 ];
 
 export const budgets = [
@@ -40,86 +42,86 @@ export const timelines = [
 
 export const services = [
   {
-    slug: "interior-styling",
-    href: "/interior-decorating",
-    title: "Interior Styling",
-    subtitle: "Rooms that finally feel finished",
+    slug: "graduations",
+    href: "/graduation-party-decorations",
+    title: "Graduation Parties",
+    subtitle: "Class-of backdrops & balloon arches",
     description:
-      "Living rooms, bedrooms, kitchens, and entryways — furniture layout, color, lighting, art, rugs, and accessories pulled together by a local interior stylist.",
-    image: "/images/designer-florals.jpg",
-  },
-  {
-    slug: "holiday-decor",
-    href: "/holiday-decorating",
-    title: "Holiday & Seasonal Décor",
-    subtitle: "Christmas, fall & more — installed for you",
-    description:
-      "Mantels, trees, garlands, porches, and tablescapes styled and installed (and taken down) by Lancaster décor pros.",
-    image: "/images/bridal-shower.jpg",
-  },
-  {
-    slug: "home-staging",
-    href: "/home-staging",
-    title: "Home Staging",
-    subtitle: "Sell faster across Lancaster County",
-    description:
-      "Listing-ready staging and styling for sellers and realtors — photogenic rooms that help buyers picture home.",
-    image: "/images/place-setting.jpg",
+      "School-color balloon arches, “Class of” backdrops, memory tables and tent styling for open houses and grad parties.",
+    image: "/images/graduation.jpg",
   },
   {
     slug: "weddings",
-    href: "/event-decor",
+    href: "/wedding-decor",
     title: "Weddings",
-    subtitle: "Ceremony & reception artistry",
+    subtitle: "Ceremony & reception décor",
     description:
-      "From floral arches and aisle runners to reception tablescapes and ceiling installations — we design every detail of your wedding day.",
+      "Ceremony arches, church and barn wedding décor, reception tablescapes, backdrops and signage.",
     image: "/images/ceremony-arch.jpg",
     video: "/videos/ceremony-arch.mp4",
   },
   {
-    slug: "birthdays",
-    href: "/balloon-decor",
-    title: "Birthdays",
-    subtitle: "Milestone celebrations",
-    description:
-      "Balloon garlands, dessert tables, custom backdrops, and immersive themes for kids, sweet sixteens, and milestone birthdays.",
-    image: "/images/birthday-setup.jpg",
-  },
-  {
     slug: "baby-showers",
-    href: "/event-decor",
+    href: "/baby-shower-decorations",
     title: "Baby Showers",
-    subtitle: "Soft, intentional, unforgettable",
+    subtitle: "Backdrops, balloons & dessert tables",
     description:
-      "Gender-neutral or themed styling with florals, balloons, gift displays, and photo moments that feel elevated — never generic.",
+      "“Oh Baby” backdrops, balloon garlands, dessert and gift tables, set up at your venue or home.",
     image: "/images/baby-shower.jpg",
   },
   {
-    slug: "graduations",
-    href: "/balloon-decor",
-    title: "Graduations",
-    subtitle: "Celebrate the next chapter",
+    slug: "birthdays",
+    href: "/birthday-party-decorations",
+    title: "Birthdays",
+    subtitle: "First birthdays to milestones",
     description:
-      "Sophisticated party décor for grads — photo walls, balloon columns, dessert stations, and custom color stories.",
-    image: "/images/graduation.jpg",
+      "Balloon garlands, number stands, dessert tables and themed backdrops for kids’ parties and milestone birthdays.",
+    image: "/images/birthday-setup.jpg",
+  },
+  {
+    slug: "church-events",
+    href: "/church-event-decorations",
+    title: "Church Events",
+    subtitle: "Anniversaries, baptisms & banquets",
+    description:
+      "Church anniversary banquets, baptism and first communion celebrations, fellowship hall décor, and Easter & Christmas church decorating.",
+    image: "/images/sweet-sixteen.jpg",
+  },
+  {
+    slug: "quinceaneras",
+    href: "/quinceanera-sweet-16-decorations",
+    title: "Quinceañeras & Sweet 16s",
+    subtitle: "Throne backdrops & grand entrances",
+    description:
+      "Throne-chair backdrops, balloon arches, marquee numbers and hall centerpieces.",
+    image: "/images/holiday-gala.jpg",
+  },
+  {
+    slug: "balloons",
+    href: "/balloon-decor",
+    title: "Balloon Décor",
+    subtitle: "Arches, garlands & walls",
+    description:
+      "Balloon arches, organic garlands, columns and balloon walls for any celebration.",
+    image: "/images/balloon-garland.jpg",
   },
   {
     slug: "engagements",
     href: "/event-decor",
-    title: "Engagements & Proposals",
-    subtitle: "Moments meant for forever",
+    title: "Showers & Engagements",
+    subtitle: "Bridal showers & proposals",
     description:
-      "Private proposal setups, engagement parties, and intimate celebrations designed for surprise and romance.",
+      "Bridal showers, engagement parties and proposal setups with backdrops and photo moments.",
     image: "/images/engagement-party.jpg",
     video: "/videos/engagement-party.mp4",
   },
   {
     slug: "corporate",
-    href: "/event-decor",
-    title: "Corporate & Galas",
-    subtitle: "Elevated brand experiences",
+    href: "/holiday-decorating",
+    title: "Holiday & Corporate",
+    subtitle: "Christmas parties & banquets",
     description:
-      "Gala dinners, holiday parties, product launches, and brand events with polished, photogenic environments.",
+      "Company holiday parties, Christmas dinners, galas and grand openings.",
     image: "/images/gala-dinner.jpg",
   },
 ];
@@ -245,12 +247,12 @@ export const process = [
   {
     step: "01",
     title: "Tell us",
-    text: "Share your project, ZIP, budget, and timeline in under a minute — home, holiday, or event.",
+    text: "Share your event, date, ZIP and budget in under a minute: graduation, wedding, shower, birthday or church event.",
   },
   {
     step: "02",
     title: "Get matched",
-    text: "We hand-pick up to two vetted Lancaster-area décor pros who fit your style, budget, and dates.",
+    text: "We hand-pick up to two Lancaster-area event decorators who fit your style, budget and date.",
   },
   {
     step: "03",
@@ -259,24 +261,28 @@ export const process = [
   },
   {
     step: "04",
-    title: "Enjoy your space",
-    text: "Your decorator designs, installs, and (for events and holidays) takes everything down.",
+    title: "Enjoy the party",
+    text: "Your decorator designs, sets up before guests arrive and takes everything down afterward.",
   },
 ];
 
 export const nav = [
-  { href: "/#services", label: "Services" },
+  { href: "/event-decor", label: "Event Décor" },
   { href: "/#how-it-works", label: "How It Works" },
   { href: "/service-area", label: "Service Area" },
   { href: "/blog", label: "Guides" },
   { href: "#contact", label: "Contact" },
 ];
 
-/** Dedicated service pages (used in header/footer/internal links). */
+/** Dedicated event pages (used in header/footer/internal links), priority order. */
 export const serviceLinks = [
-  { href: "/interior-decorating", label: "Interior Decorating" },
-  { href: "/home-staging", label: "Home Staging" },
-  { href: "/holiday-decorating", label: "Holiday & Christmas Decorating" },
-  { href: "/event-decor", label: "Wedding & Event Décor" },
-  { href: "/balloon-decor", label: "Balloon Décor" },
+  { href: "/graduation-party-decorations", label: "Graduation Party Decorations" },
+  { href: "/wedding-decor", label: "Wedding Décor" },
+  { href: "/baby-shower-decorations", label: "Baby Shower Decorations" },
+  { href: "/birthday-party-decorations", label: "Birthday Party Decorations" },
+  { href: "/church-event-decorations", label: "Church Event Decorations" },
+  { href: "/quinceanera-sweet-16-decorations", label: "Quinceañera & Sweet 16" },
+  { href: "/balloon-decor", label: "Balloon Arches & Garlands" },
+  { href: "/holiday-decorating", label: "Holiday Party Décor" },
+  { href: "/event-decor", label: "All Event Decorations" },
 ];
