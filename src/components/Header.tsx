@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import Logo from "@/components/Logo";
 import { nav, site } from "@/lib/content";
@@ -97,9 +98,9 @@ export default function Header() {
       data-theme={darkMode ? "dark" : "light"}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8 md:py-5">
-        <a href="#top" className="group relative z-50" aria-label="Lancaster Decorators home">
+        <Link href="/" className="group relative z-50" aria-label="Lancaster Decorators home">
           <Logo theme={darkMode ? "dark" : "light"} variant="full" priority />
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
           {nav.map((item) => (
