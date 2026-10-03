@@ -131,7 +131,7 @@ export default function Logo({
             theme === "dark" ? "text-cream/70" : "text-warm-gray"
           }`}
         >
-          Event Décor · Lancaster
+          Event Decorators · Lancaster, PA
         </span>
       </span>
     </span>
