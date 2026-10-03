@@ -2,7 +2,7 @@ export const site = {
   name: "Lancaster Decorators",
   tagline: "Party & Event Décor · Lancaster, PA",
   description:
-    "Lancaster County’s event decorating network. Tell us about your graduation party, wedding, baby shower, birthday or church event and get matched with local event decorators — free, no obligation.",
+    "Lancaster Decorators is an event decorator in Lancaster County, PA, designing and installing décor for graduation parties, weddings, baby showers, birthdays and church events. Free quotes, no obligation.",
   address: "Lancaster County, Pennsylvania",
   serviceArea:
     "Lancaster · Lititz · Ephrata · Manheim · Mount Joy · Elizabethtown · Strasburg · Leola · Millersville · Willow Street",
@@ -251,18 +251,18 @@ export const process = [
   },
   {
     step: "02",
-    title: "Get matched",
-    text: "We hand-pick up to two Lancaster-area event decorators who fit your style, budget and date.",
+    title: "Get ideas & a quote",
+    text: "We reply with design ideas and a free, no-obligation quote, usually within 1 business day.",
   },
   {
     step: "03",
-    title: "Compare quotes",
-    text: "Pros reach out with ideas and pricing. Free, no obligation — choose the one you love.",
+    title: "Book your date",
+    text: "Approve the plan to reserve your date. If we’re already booked, we’ll say so up front and can connect you with a vetted local decorator.",
   },
   {
     step: "04",
     title: "Enjoy the party",
-    text: "Your decorator designs, sets up before guests arrive and takes everything down afterward.",
+    text: "We set up before guests arrive and take everything down afterward.",
   },
 ];
 
