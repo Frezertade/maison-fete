@@ -10,8 +10,9 @@ import Process from "@/components/Process";
 import Services from "@/components/Services";
 import StickyCta from "@/components/StickyCta";
 import { site } from "@/lib/content";
-import { SITE_URL } from "@/lib/seo";
-import Testimonials from "@/components/Testimonials";
+import { BUSINESS_ID, SITE_URL } from "@/lib/seo";
+import { servicePages } from "@/lib/service-pages";
+import { towns } from "@/lib/towns";
 
 export default function Home() {
   return (
@@ -25,7 +26,6 @@ export default function Home() {
         <Gallery />
         <About />
         <Process />
-        <Testimonials />
         <Contact />
       </main>
       <Footer />
@@ -35,21 +35,41 @@ export default function Home() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "HomeAndConstructionBusiness",
+            "@type": "ProfessionalService",
+            "@id": BUSINESS_ID,
             name: site.name,
             description: site.description,
             url: SITE_URL,
+            logo: `${SITE_URL}/icon.svg`,
             image: `${SITE_URL}/images/hero-wedding.jpg`,
-            areaServed: site.serviceArea.split(" · ").map((c) => ({
-              "@type": "City",
-              name: `${c}, PA`,
-            })),
+            // Referral service with no storefront: service area only, no
+            // street address, phone, ratings or reviews.
+            areaServed: [
+              { "@type": "AdministrativeArea", name: "Lancaster County, PA" },
+              ...towns.map((t) => ({
+                "@type": "City",
+                name: `${t.name.replace(" (city)", "")}, PA`,
+              })),
+            ],
             knowsAbout: [
               "Interior decorating",
               "Home staging",
               "Holiday decorating",
-              "Event decor",
+              "Wedding and event decor",
+              "Balloon decor",
             ],
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "Décor services (via independent local pros)",
+              itemListElement: servicePages.map((p) => ({
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: p.name,
+                  url: `${SITE_URL}${p.path}`,
+                },
+              })),
+            },
           }),
         }}
       />

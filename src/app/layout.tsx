@@ -18,6 +18,19 @@ const figtree = Figtree({
   display: "swap",
 });
 
+// Search engine ownership verification via meta tags (optional).
+// Set GOOGLE_SITE_VERIFICATION / BING_SITE_VERIFICATION in Vercel (Production)
+// and redeploy. Not needed if verifying via DNS TXT records instead.
+const googleVerification = process.env.GOOGLE_SITE_VERIFICATION?.trim();
+const bingVerification = process.env.BING_SITE_VERIFICATION?.trim();
+const verification: Metadata["verification"] | undefined =
+  googleVerification || bingVerification
+    ? {
+        ...(googleVerification ? { google: googleVerification } : {}),
+        ...(bingVerification ? { other: { "msvalidate.01": bingVerification } } : {}),
+      }
+    : undefined;
+
 export const metadata: Metadata = {
   title: {
     default: "Lancaster PA Home & Event Décor | Free Quotes | Lancaster Decorators",
@@ -33,6 +46,7 @@ export const metadata: Metadata = {
     "home staging Lancaster PA",
     "event decor Lancaster PA",
     "wedding decorator Lancaster County",
+    "balloon decorations Lancaster PA",
   ],
   alternates: { canonical: "/" },
   openGraph: {
@@ -60,16 +74,9 @@ export const metadata: Metadata = {
     images: ["/images/hero-wedding.jpg"],
   },
   robots: { index: true, follow: true },
-  // Prefer PNG monogram so browsers don't stick on the default Next.ico
-  icons: {
-    icon: [
-      { url: "/icon.png", type: "image/png", sizes: "512x512" },
-      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
-      { url: "/favicon.ico", sizes: "48x48" },
-    ],
-    shortcut: [{ url: "/icon.png", type: "image/png" }],
-    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
-  },
+  // Icons come from the file conventions: src/app/icon.svg (LD monogram),
+  // src/app/apple-icon.tsx (generated PNG) and src/app/favicon.ico/route.ts.
+  ...(verification ? { verification } : {}),
   metadataBase: new URL(SITE_URL),
 };
 

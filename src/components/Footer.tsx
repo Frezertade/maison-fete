@@ -1,5 +1,6 @@
+import Link from "next/link";
 import Logo from "@/components/Logo";
-import { nav, site } from "@/lib/content";
+import { nav, serviceLinks, site } from "@/lib/content";
 
 export default function Footer() {
   return (
@@ -9,15 +10,32 @@ export default function Footer() {
     >
       <div className="mx-auto max-w-7xl px-5 py-16 md:px-8">
         <div className="grid gap-12 md:grid-cols-12">
-          <div className="md:col-span-5">
-            <a href="#top" aria-label="Lancaster Decorators home">
+          <div className="md:col-span-4">
+            <Link href="/" aria-label="Lancaster Decorators home">
               <Logo theme="dark" variant="full" />
-            </a>
+            </Link>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/60">
               {site.description}
             </p>
           </div>
           <div className="md:col-span-3">
+            <p className="text-[10px] uppercase tracking-[0.22em] text-champagne">
+              Services
+            </p>
+            <ul className="mt-4 space-y-2">
+              {serviceLinks.map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    className="text-sm text-cream/70 transition-colors hover:text-champagne"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="md:col-span-2">
             <p className="text-[10px] uppercase tracking-[0.22em] text-champagne">
               Explore
             </p>
@@ -34,7 +52,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div className="md:col-span-4">
+          <div className="md:col-span-3">
             <p className="text-[10px] uppercase tracking-[0.22em] text-champagne">
               Contact
             </p>

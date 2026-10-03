@@ -1,5 +1,7 @@
 import { services } from "@/lib/content";
 import Image from "next/image";
+import Link from "next/link";
+import { serviceLinks } from "@/lib/content";
 
 export default function Services() {
   return (
@@ -24,9 +26,10 @@ export default function Services() {
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, i) => (
-            <article
+            <Link
               key={service.slug}
-              className="group relative overflow-hidden rounded-2xl bg-cream"
+              href={service.href}
+              className="group relative block overflow-hidden rounded-2xl bg-cream"
               style={{ animationDelay: `${i * 0.05}s` }}
             >
               <div className="img-zoom relative aspect-[4/5] overflow-hidden">
@@ -61,9 +64,22 @@ export default function Services() {
                   </p>
                 </div>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
+
+        <ul className="mt-10 flex flex-wrap gap-3">
+          {serviceLinks.map((l) => (
+            <li key={l.href}>
+              <Link
+                href={l.href}
+                className="inline-flex rounded-full border border-espresso/15 px-5 py-2.5 text-sm text-espresso transition-colors hover:border-gold hover:text-gold"
+              >
+                {l.label} →
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
