@@ -48,11 +48,11 @@ const LANCASTER_FLOWER_CO: Source = {
 export const SOURCES = { BALLOON_LADY, BALLOONABLES, LALA_GLAM, LANCASTER_FLOWER_CO };
 
 const NOT_OUR_PRICES =
-  "These are other local businesses’ own published prices, shown for reference only. They are not Lancaster Decorators prices, and the independent pros we match you with set their own quotes.";
+  "These are other local businesses’ own published prices, shown for reference only. They are not Lancaster Decorators prices; we quote every event individually.";
 
-const REFERRAL_FAQ: Faq = {
-  q: "Is Lancaster Decorators the company that decorates?",
-  a: "We’re a free matching service for Lancaster County event décor. You send one request and we pass it to up to two independent local decorators, stylists or balloon artists who fit your event. They quote, design, set up and take down; you decide who to hire.",
+const PROVIDER_FAQ: Faq = {
+  q: "Do you do the decorating yourselves?",
+  a: "Yes. Lancaster Decorators designs, delivers, sets up and takes down your décor. If we’re already booked on your date or the request is outside our specialty, we’ll tell you up front and can connect you with a vetted local decorator instead.",
 };
 
 export const servicePages: ServicePage[] = [
@@ -63,12 +63,12 @@ export const servicePages: ServicePage[] = [
     name: "Graduation Party Decorations",
     title: "Graduation Party Decorations in Lancaster, PA — Grad Party Decor",
     description:
-      "Graduation party decorations in Lancaster, PA: balloon arches in school colors, grad backdrops and photo walls, centerpieces, tent and table styling. Free quotes from local decorators.",
+      "Graduation party decorations in Lancaster, PA: balloon arches in school colors, grad backdrops and photo walls, centerpieces, tent and table styling. Free quotes from Lancaster Decorators.",
     eyebrow: "Graduation Party Décor · Lancaster County",
     h1: "Graduation Party Decorations in Lancaster, PA",
     intro: [
-      "Open house in the backyard, a party in the church fellowship hall, or a rented pavilion for the whole class? Tell us the date, the school colors and roughly how many guests you expect, and we’ll match you with up to two independent Lancaster County decorators who do grad parties.",
-      "They can design and install the whole look (balloon arch, “Class of” backdrop, photo wall, dessert and memory tables) or just the statement pieces. It’s free to ask and there’s no obligation.",
+      "Open house in the backyard, a party in the church fellowship hall, or a rented pavilion for the whole class? Tell us the date, the school colors and roughly how many guests you expect, and we’ll send you ideas and a quote for your grad party.",
+      "We can design and install the whole look (balloon arch, “Class of” backdrop, photo wall, dessert and memory tables) or just the statement pieces. It’s free to ask and there’s no obligation.",
     ],
     image: "/images/graduation.jpg",
     imageAlt: "Black and gold graduation party décor with balloons and backdrop",
@@ -88,8 +88,8 @@ export const servicePages: ServicePage[] = [
       {
         heading: "Planning a grad party in Lancaster County",
         paragraphs: [
-          "Most Lancaster County graduation parties happen between late May and July, and many families host on the same few weekends right after commencement. Decorators and balloon artists book up fast for those Saturdays, so ask for quotes as soon as you’ve picked a date, ideally in late winter or early spring.",
-          "Grad parties here range from backyard open houses in Lititz, Manheim or Willow Street to rented pavilions and fire halls, church fellowship halls in Ephrata or Elizabethtown, and joint parties for a group of friends. Tell us the setting and the pros can suggest what works: wind-resistant pieces for tents, compact setups for garages, or a bigger backdrop for a hall.",
+          "Most Lancaster County graduation parties happen between late May and July, and many families host on the same few weekends right after commencement. Those Saturdays book up fast, so ask for quotes as soon as you’ve picked a date, ideally in late winter or early spring.",
+          "Grad parties here range from backyard open houses in Lititz, Manheim or Willow Street to rented pavilions and fire halls, church fellowship halls in Ephrata or Elizabethtown, and joint parties for a group of friends. Tell us the setting and we’ll suggest what works: wind-resistant pieces for tents, compact setups for garages, or a bigger backdrop for a hall.",
         ],
       },
       {
@@ -108,7 +108,7 @@ export const servicePages: ServicePage[] = [
       {
         heading: "Pair décor with your rentals",
         paragraphs: [
-          "If you’re renting a tent, tables and chairs, book those first, then share the layout with your decorator so balloon and backdrop sizes fit. Tent, table and chair rentals are offered by separate Lancaster County rental companies; décor stylists add the finishing layer on top.",
+          "If you’re renting a tent, tables and chairs, book those first, then share the layout with us so balloon and backdrop sizes fit. Tents, tables and chairs come from separate Lancaster County rental companies; we add the décor on top.",
         ],
       },
     ],
@@ -126,13 +126,13 @@ export const servicePages: ServicePage[] = [
       sources: [LALA_GLAM, BALLOON_LADY, BALLOONABLES],
     },
     faqs: [
-      { q: "How far ahead should I book graduation party decorations in Lancaster?", a: "As early as possible. Grad parties cluster on the weekends right after commencement in late May and June, so many decorators fill those dates first. Requesting quotes in late winter or early spring gives you the most choice." },
-      { q: "Can you decorate a backyard or tent grad party?", a: "Yes. Many requests are backyard open houses or tent parties. Mention that it’s outdoors so the pro can plan for sun, wind and rain (balloons fade and pop faster in direct sun)." },
-      { q: "Can the décor match our school colors?", a: "Yes. Put the school colors (or school name) in your request and the decorator will build the balloons, linens and backdrop around them." },
-      { q: "What does a grad party decorator charge?", a: "Pricing varies with the size of the install and setup. Some area balloon businesses publish starting prices on their sites (for example, chiara arches from $500 at Lancaster PA Balloon Lady). Request a free quote for your party to get actual numbers." },
-      { q: "Do you also handle tent and table rentals?", a: "Tents, tables and chairs usually come from separate local rental companies. The decorators we match you with style on top of those rentals, and many can recommend a rental company." },
+      { q: "How far ahead should I book graduation party decorations in Lancaster?", a: "As early as possible. Grad parties cluster on the weekends right after commencement in late May and June, and those dates fill first. Requesting quotes in late winter or early spring gives you the most choice." },
+      { q: "Can you decorate a backyard or tent grad party?", a: "Yes. Backyard open houses and tent parties are common. Mention that it’s outdoors so we can plan for sun, wind and rain (balloons fade and pop faster in direct sun)." },
+      { q: "Can the décor match our school colors?", a: "Yes. Put the school colors (or school name) in your request and we’ll build the balloons, linens and backdrop around them." },
+      { q: "How much does grad party decorating cost?", a: "Pricing varies with the size of the install and setup, and we quote each party individually. For reference, some area balloon businesses publish starting prices on their own sites (for example, chiara arches from $500 at Lancaster PA Balloon Lady). Request a free quote for your party." },
+      { q: "Do you also handle tent and table rentals?", a: "Tents, tables and chairs usually come from separate local rental companies. We style on top of those rentals and can work with whichever rental company you book." },
       { q: "Can we do a joint party for several graduates?", a: "Yes. Joint parties are common. Tell us how many grads and whether you want one shared backdrop or a display for each." },
-      REFERRAL_FAQ,
+      PROVIDER_FAQ,
     ],
     related: ["/blog/graduation-party-decoration-ideas-cost-lancaster", "/balloon-decor", "/birthday-party-decorations", "/event-decor", "/service-area"],
   },
@@ -144,12 +144,12 @@ export const servicePages: ServicePage[] = [
     name: "Wedding Décor",
     title: "Wedding Decor & Decorators in Lancaster, PA — Ceremony & Reception",
     description:
-      "Wedding decor in Lancaster, PA: ceremony arches, church and barn wedding decorations, reception tablescapes, backdrops and décor rentals. Get matched with local wedding decorators free.",
+      "Wedding decor in Lancaster, PA: ceremony arches, church and barn wedding decorations, reception tablescapes, backdrops and décor rentals. Request a free quote.",
     eyebrow: "Wedding Décor · Lancaster County",
     h1: "Wedding Decor & Decorators in Lancaster, PA",
     intro: [
-      "Barn, farm, church, winery or hotel ballroom: tell us your date, venue, guest count and style, and we’ll introduce you to up to two independent Lancaster County wedding decorators or rental-and-styling companies.",
-      "They design the look, deliver and set up on the day, and (usually) clear everything out afterward, so you and your family can just enjoy the wedding.",
+      "Barn, farm, church, winery or hotel ballroom: tell us your date, venue, guest count and style, and we’ll put together a décor plan and quote for your wedding.",
+      "We design the look, deliver and set up on the day, and clear everything out afterward, so you and your family can just enjoy the wedding.",
     ],
     image: "/images/ceremony-arch.jpg",
     imageAlt: "Outdoor floral ceremony arch at golden hour",
@@ -169,7 +169,7 @@ export const servicePages: ServicePage[] = [
       {
         heading: "Decorator, rental company or planner?",
         paragraphs: [
-          "A wedding decorator designs the look and installs it. A rental company supplies pieces, sometimes with delivery and setup. A planner or coordinator runs the timeline and all the vendors. Many Lancaster couples combine them, for example a coordinator plus a décor stylist, or rentals plus a day-of setup crew.",
+          "A wedding decorator (that’s us) designs the look and installs it. A rental company supplies pieces, sometimes with delivery and setup. A planner or coordinator runs the timeline and all the vendors. Many Lancaster couples combine them, for example a coordinator plus a décor stylist, or rentals plus a day-of setup crew.",
         ],
         bullets: [
           "You want a designed look installed for you → wedding decorator / stylist",
@@ -180,7 +180,7 @@ export const servicePages: ServicePage[] = [
       {
         heading: "Church and barn weddings in Lancaster County",
         paragraphs: [
-          "Many Lancaster County weddings have a church ceremony followed by a reception at a barn, farm or hall. Ask the church about its rules on candles, aisle runners, petals and attaching anything to pews, and ask the reception venue about setup and teardown windows. Your decorator can then plan pieces that move from ceremony to reception, like arrangements and signage.",
+          "Many Lancaster County weddings have a church ceremony followed by a reception at a barn, farm or hall. Ask the church about its rules on candles, aisle runners, petals and attaching anything to pews, and ask the reception venue about setup and teardown windows. We can then plan pieces that move from ceremony to reception, like arrangements and signage.",
           "Barn and farm venues around Manheim, Strasburg, Mount Joy and Leola often provide tables and string lights but not linens or centerpieces. Check what’s included before you request quotes.",
         ],
       },
@@ -200,13 +200,13 @@ export const servicePages: ServicePage[] = [
       sources: [LANCASTER_FLOWER_CO],
     },
     faqs: [
-      { q: "How much does it cost to hire a wedding decorator in Lancaster, PA?", a: "It depends on guest count, installs, florals, rentals and labor. Request a free quote with your date, venue and guest count, and local decorators will price your actual wedding." },
-      { q: "What does a wedding decorator do?", a: "They design the décor plan, source or supply the pieces (arches, linens, centerpieces, signage, backdrops), set everything up at the ceremony and reception, and usually take it down afterward." },
-      { q: "Can you decorate a church wedding ceremony?", a: "Yes. Decorators can handle aisle and pew décor, altar arrangements and entrance pieces. Check your church’s rules on candles, petals and attachments first." },
+      { q: "How much does it cost to hire a wedding decorator in Lancaster, PA?", a: "It depends on guest count, installs, florals, rentals and labor. Request a free quote with your date, venue and guest count, and we’ll price your actual wedding." },
+      { q: "What does a wedding decorator do?", a: "We design the décor plan, source or supply the pieces (arches, linens, centerpieces, signage, backdrops), set everything up at the ceremony and reception, and take it down afterward." },
+      { q: "Can you decorate a church wedding ceremony?", a: "Yes. We handle aisle and pew décor, altar arrangements and entrance pieces. Check your church’s rules on candles, petals and attachments first." },
       { q: "How far in advance should I book wedding décor?", a: "As soon as your venue and date are confirmed, especially for peak-season Saturdays." },
-      { q: "Can I just rent wedding décor and set it up myself?", a: "Yes. Say you want rentals only and we’ll point you toward local rental options." },
+      { q: "Can I just rent wedding décor and set it up myself?", a: "Yes. Say you want rentals only and we’ll let you know what we can offer or point you toward local rental options." },
       { q: "Do you also do bridal showers and engagement parties?", a: "Yes. Choose “Bridal shower / engagement décor” in the form, or see our baby shower and event décor pages." },
-      REFERRAL_FAQ,
+      PROVIDER_FAQ,
     ],
     related: ["/church-event-decorations", "/event-decor", "/baby-shower-decorations", "/balloon-decor", "/service-area"],
   },
@@ -222,8 +222,8 @@ export const servicePages: ServicePage[] = [
     eyebrow: "Baby Shower Décor · Lancaster County",
     h1: "Baby Shower Decorations & Setup in Lancaster County",
     intro: [
-      "Hosting a baby shower at a restaurant private room, a church hall, a small venue or at home? Tell us the date, location, guest count and theme, and we’ll match you with up to two independent Lancaster County decorators or balloon artists who do showers.",
-      "They bring the backdrop, balloons and table styling, set it all up before guests arrive, and come back for it afterward, so the host isn’t up on a ladder the morning of the shower.",
+      "Hosting a baby shower at a restaurant private room, a church hall, a small venue or at home? Tell us the date, location, guest count and theme, and we’ll send you ideas and a quote.",
+      "We bring the backdrop, balloons and table styling, set it all up before guests arrive, and come back for it afterward, so the host isn’t up on a ladder the morning of the shower.",
     ],
     image: "/images/baby-shower.jpg",
     imageAlt: "Sage and cream baby shower décor with balloons and dessert table",
@@ -236,14 +236,14 @@ export const servicePages: ServicePage[] = [
         { title: "Dessert & gift tables", text: "Linens, risers, cake stands and signage for the cake, cookies and gift display." },
         { title: "Centerpieces", text: "Floral, greenery or balloon centerpieces for guest tables." },
         { title: "Gender reveal setups", text: "Reveal backdrops and balloon pieces, plus décor that keeps the surprise." },
-        { title: "Bridal showers too", text: "The same pros style bridal showers and engagement parties." },
+        { title: "Bridal showers too", text: "We also style bridal showers and engagement parties." },
       ],
     },
     sections: [
       {
         heading: "Where Lancaster County baby showers happen",
         paragraphs: [
-          "Many local showers are held in restaurant private rooms, inns, small event studios, church fellowship halls or a relative’s home. Decorators work in all of them, but each venue has its own rules about setup time, candles, confetti and balloons, so check with the venue before you book décor.",
+          "Many local showers are held in restaurant private rooms, inns, small event studios, church fellowship halls or a relative’s home. We can work in all of them, but each venue has its own rules about setup time, candles, confetti and balloons, so check with the venue before you book décor.",
           "Looking for a place to host? See our guide to baby shower venues in Lancaster County, with spaces in Lititz, Manheim, Bird-in-Hand and the Adamstown area.",
         ],
       },
@@ -278,12 +278,12 @@ export const servicePages: ServicePage[] = [
       sources: [BALLOON_LADY, BALLOONABLES],
     },
     faqs: [
-      { q: "How much does it cost to have a baby shower decorated in Lancaster?", a: "It varies with the size of the backdrop and balloon installs and how many tables are styled. Some local balloon businesses publish starting prices (for example, backdrops from $200 at Lancaster PA Balloon Lady). Request a free quote for your shower to get real numbers." },
-      { q: "Can a decorator set up at a restaurant or church hall?", a: "Yes. Tell us the venue and its setup window. Many restaurant private rooms only allow a short setup time, so decorators often prebuild pieces." },
-      { q: "Do you offer baby shower decoration packages?", a: "Many decorators offer packages (for example backdrop + balloon garland + dessert table styling). Ask for package options in your request." },
+      { q: "How much does it cost to have a baby shower decorated in Lancaster?", a: "It varies with the size of the backdrop and balloon installs and how many tables are styled, and we quote each shower individually. For reference, some local balloon businesses publish starting prices (for example, backdrops from $200 at Lancaster PA Balloon Lady). Request a free quote for your shower." },
+      { q: "Can you set up at a restaurant or church hall?", a: "Yes. Tell us the venue and its setup window. Many restaurant private rooms only allow a short setup time, so we prebuild pieces where we can." },
+      { q: "Do you offer baby shower decoration packages?", a: "Ask for package options in your request (for example backdrop + balloon garland + dessert table styling) and we’ll suggest a setup that fits your budget." },
       { q: "How far in advance should I book?", a: "Two to six weeks is common for showers, and more for spring and early-summer weekends." },
-      { q: "Can you help with a gender reveal?", a: "Yes. Mention it in your request so the decorator can plan reveal pieces and keep the surprise." },
-      REFERRAL_FAQ,
+      { q: "Can you help with a gender reveal?", a: "Yes. Mention it in your request so we can plan reveal pieces and keep the surprise." },
+      PROVIDER_FAQ,
     ],
     related: ["/blog/baby-shower-venues-lancaster-county", "/balloon-decor", "/birthday-party-decorations", "/wedding-decor", "/service-area"],
   },
@@ -295,11 +295,11 @@ export const servicePages: ServicePage[] = [
     name: "Birthday Party Decorations",
     title: "Birthday Party Decorations in Lancaster, PA — Party Decorators",
     description:
-      "Birthday party decorations in Lancaster, PA: first birthdays, kids’ themes, milestone 30th–90th parties, balloon garlands, backdrops and dessert tables. Free quotes from local party decorators.",
+      "Birthday party decorations in Lancaster, PA: first birthdays, kids’ themes, milestone 30th–90th parties, balloon garlands, backdrops and dessert tables. Free quotes from Lancaster Decorators.",
     eyebrow: "Birthday Party Décor · Lancaster County",
     h1: "Birthday Party Decorations in Lancaster, PA",
     intro: [
-      "First birthday, a themed kids’ party, a surprise 50th or a 90th in the church hall: tell us who’s celebrating, where and when, and we’ll match you with up to two independent Lancaster County party decorators or balloon artists.",
+      "First birthday, a themed kids’ party, a surprise 50th or a 90th in the church hall: tell us who’s celebrating, where and when, and we’ll send you ideas and a quote.",
       "Get the full setup (backdrop, balloons, dessert table, centerpieces) or just one statement piece.",
     ],
     image: "/images/birthday-setup.jpg",
@@ -320,8 +320,8 @@ export const servicePages: ServicePage[] = [
       {
         heading: "Birthday parties around Lancaster County",
         paragraphs: [
-          "Parties happen everywhere: homes in Millersville and Willow Street, rented party rooms and fire halls, restaurant private rooms in Lititz and Lancaster city, and church fellowship halls for big family milestones. Tell us the venue so the decorator can plan the setup window and anything the venue doesn’t allow.",
-          "Kids’ party venues often offer their own themed packages; if you’re hosting at home or in a rented hall, a decorator can bring the same wow factor to your own space.",
+          "Parties happen everywhere: homes in Millersville and Willow Street, rented party rooms and fire halls, restaurant private rooms in Lititz and Lancaster city, and church fellowship halls for big family milestones. Tell us the venue so we can plan the setup window and anything the venue doesn’t allow.",
+          "Kids’ party venues often offer their own themed packages; if you’re hosting at home or in a rented hall, we can bring the same wow factor to your own space.",
         ],
       },
       {
@@ -348,12 +348,12 @@ export const servicePages: ServicePage[] = [
       sources: [BALLOONABLES, BALLOON_LADY],
     },
     faqs: [
-      { q: "How much does a party decorator cost in Lancaster, PA?", a: "Pricing varies with install size and setup. Some local balloon businesses publish starting prices, for example number stands from $125 at Balloonables and backdrops from $200 at Lancaster PA Balloon Lady. Request a free quote for your party." },
-      { q: "Do you decorate first birthday parties?", a: "Yes. First birthdays are one of the most common requests: “ONE” backdrops, high-chair décor and soft balloon garlands." },
+      { q: "How much does a party decorator cost in Lancaster, PA?", a: "Pricing varies with install size and setup, and we quote each party individually. For reference, some local balloon businesses publish starting prices, for example number stands from $125 at Balloonables and backdrops from $200 at Lancaster PA Balloon Lady. Request a free quote for your party." },
+      { q: "Do you decorate first birthday parties?", a: "Yes. First birthdays are a favorite: “ONE” backdrops, high-chair décor and soft balloon garlands." },
       { q: "Can you set up a surprise party before the guest arrives?", a: "Yes. Give the setup time and venue access details in your request." },
       { q: "Can you decorate an adult milestone birthday?", a: "Yes. 30th to 90th birthdays often feature marquee numbers, elegant tablescapes and photo backdrops." },
       { q: "How far in advance should I book?", a: "Two to four weeks is often enough, but weekends in spring and graduation season fill up faster." },
-      REFERRAL_FAQ,
+      PROVIDER_FAQ,
     ],
     related: ["/balloon-decor", "/quinceanera-sweet-16-decorations", "/baby-shower-decorations", "/event-decor", "/service-area"],
   },
@@ -369,14 +369,14 @@ export const servicePages: ServicePage[] = [
     eyebrow: "Church Event Décor · Lancaster County",
     h1: "Church Event Decorations in Lancaster County, PA",
     intro: [
-      "Planning a church anniversary banquet, a baptism or first communion celebration, a fellowship dinner, or Easter and Christmas décor for the sanctuary? Tell us about the event and the space, and we’ll match you with up to two independent Lancaster County decorators who work in churches and fellowship halls.",
+      "Planning a church anniversary banquet, a baptism or first communion celebration, a fellowship dinner, or Easter and Christmas décor for the sanctuary? Tell us about the event and the space, and we’ll put together a plan and quote that works within your church’s guidelines.",
       "Requests can come from a church committee, a ministry leader or a family planning a celebration after a service.",
     ],
     image: "/images/sweet-sixteen.jpg",
     imageAlt: "Candlelit banquet hall with floral centerpieces",
     projectType: "Church event décor",
     includes: {
-      heading: "Church events we take requests for",
+      heading: "Church events we decorate",
       items: [
         { title: "Church anniversaries", text: "25th, 50th, 75th and 100th anniversary banquets: centerpieces, head-table and altar arrangements, entrance displays and history or photo tables." },
         { title: "Baptism & christening", text: "Celebration décor for the reception after the service: dessert and cake tables, soft balloon garlands, name backdrops and centerpieces." },
@@ -390,7 +390,7 @@ export const servicePages: ServicePage[] = [
       {
         heading: "Decorating a church or fellowship hall",
         paragraphs: [
-          "Church spaces come with their own guidelines: candles and open flames, what can be attached to pews and walls, when the sanctuary is available between services, and whether décor needs to be removed the same day. Ask your church office or property committee first, and share the answers in your request so the decorator can plan around them.",
+          "Church spaces come with their own guidelines: candles and open flames, what can be attached to pews and walls, when the sanctuary is available between services, and whether décor needs to be removed the same day. Ask your church office or property committee first, and share the answers in your request so we can plan around them.",
           "Fellowship halls often have long banquet tables and plain walls. A few pieces make the biggest difference: table runners and centerpieces, a backdrop or display behind the head table, and an entrance table with the program, guest book or photos.",
         ],
       },
@@ -403,23 +403,23 @@ export const servicePages: ServicePage[] = [
       {
         heading: "Across Lancaster County",
         paragraphs: [
-          "We take requests from congregations and families throughout the county, from Lancaster city to Ephrata, Lititz, Elizabethtown, Mount Joy, Strasburg, New Holland and Quarryville. Tell us the church or hall and the date.",
+          "We decorate for congregations and families throughout the county, from Lancaster city to Ephrata, Lititz, Elizabethtown, Mount Joy, Strasburg, New Holland and Quarryville. Tell us the church or hall and the date.",
         ],
       },
     ],
     pricing: {
       heading: "How much do church event decorations cost?",
       paragraphs: [
-        "It depends on the number of tables, centerpiece style (fresh flowers, faux florals, candles or balloons), backdrops, and setup and takedown timing around services. Because church events vary so much, we don’t publish a price range we can’t back up. Request a free quote and local decorators will price your event; mention your budget so they can suggest what fits.",
+        "It depends on the number of tables, centerpiece style (fresh flowers, faux florals, candles or balloons), backdrops, and setup and takedown timing around services. Because church events vary so much, we don’t publish a price range we can’t back up. Request a free quote; mention your budget and we’ll suggest what fits.",
       ],
     },
     faqs: [
       { q: "Do you decorate church anniversary banquets?", a: "Yes. Requests for 25th, 50th, 75th and 100th church anniversary banquets are welcome: centerpieces, head-table and altar décor, entrance and history displays." },
-      { q: "Can you decorate for a baptism or christening party?", a: "Yes. Decorators can style the reception after the service, whether it’s in the fellowship hall, a restaurant room or at home." },
+      { q: "Can you decorate for a baptism or christening party?", a: "Yes. We can style the reception after the service, whether it’s in the fellowship hall, a restaurant room or at home." },
       { q: "Do you do first communion party decorations?", a: "Yes. White, gold and soft-color palettes, cross or chalice accents, backdrops and table décor for the family celebration." },
-      { q: "Can you decorate the sanctuary for Easter or Christmas?", a: "We can match your church with decorators who do seasonal altar flowers, greenery, wreaths and garland. Share the dates and any guidelines from your church." },
+      { q: "Can you decorate the sanctuary for Easter or Christmas?", a: "Yes. We can provide seasonal altar flowers, greenery, wreaths and garland. Share the dates and any guidelines from your church." },
       { q: "Can a church committee submit the request?", a: "Yes. Any committee member or staff person can submit it. Include the church name, event date, room and a contact who can approve the plan." },
-      REFERRAL_FAQ,
+      PROVIDER_FAQ,
     ],
     related: ["/blog/church-anniversary-first-communion-decoration-ideas", "/holiday-decorating", "/wedding-decor", "/event-decor", "/service-area"],
   },
@@ -431,11 +431,11 @@ export const servicePages: ServicePage[] = [
     name: "Quinceañera & Sweet 16 Decorations",
     title: "Quinceañera & Sweet 16 Decorations in Lancaster, PA",
     description:
-      "Quinceañera and sweet 16 decorations in Lancaster, PA: throne chair and backdrop setups, balloon arches, marquee numbers, centerpieces and hall décor. Free quotes from local decorators.",
+      "Quinceañera and sweet 16 decorations in Lancaster, PA: throne chair and backdrop setups, balloon arches, marquee numbers, centerpieces and hall décor. Free quotes from Lancaster Decorators.",
     eyebrow: "Quinceañera & Sweet 16 · Lancaster County",
     h1: "Quinceañera & Sweet 16 Decorations in Lancaster, PA",
     intro: [
-      "A quinceañera or sweet 16 deserves a grand entrance. Tell us the date, venue, colors and guest count, and we’ll match you with up to two independent Lancaster County decorators who style quinces and sweet sixteens.",
+      "A quinceañera or sweet 16 deserves a grand entrance. Tell us the date, venue, colors and guest count, and we’ll send you ideas and a quote.",
       "Think throne-chair backdrops, balloon arches, a dramatic head table, marquee “15” or “16” numbers and hall centerpieces, all set up before the party starts.",
     ],
     image: "/images/holiday-gala.jpg",
@@ -456,7 +456,7 @@ export const servicePages: ServicePage[] = [
       {
         heading: "Planning a quinceañera in Lancaster County",
         paragraphs: [
-          "Many families hold a Mass or blessing followed by a reception in a hall, fire company social hall or event center. Ask the venue about setup time, open flames and ceiling or wall attachments, and share your color palette and dress color with the decorator; most designs are built around the dress.",
+          "Many families hold a Mass or blessing followed by a reception in a hall, fire company social hall or event center. Ask the venue about setup time, open flames and ceiling or wall attachments, and share your color palette and dress color with us; most designs are built around the dress.",
           "Sweet 16 parties range from restaurant private rooms in Lititz and Lancaster city to rented halls and backyard parties. The same backdrop + balloons + head-table formula scales up or down.",
         ],
       },
@@ -476,12 +476,12 @@ export const servicePages: ServicePage[] = [
       sources: [BALLOON_LADY],
     },
     faqs: [
-      { q: "How much do quinceañera decorations cost in Lancaster?", a: "It depends on the hall, the number of tables and the setup you want. Request a free quote with your venue and guest count and local decorators will price it." },
-      { q: "Can you provide a throne chair and backdrop?", a: "Many local decorators and rental companies offer throne chair and backdrop setups. Mention it in your request." },
+      { q: "How much do quinceañera decorations cost in Lancaster?", a: "It depends on the hall, the number of tables and the setup you want. Request a free quote with your venue and guest count and we’ll price it." },
+      { q: "Can you provide a throne chair and backdrop?", a: "Throne chair and backdrop setups are a popular request. Mention it in your request and we’ll include options in your quote." },
       { q: "Do you decorate sweet 16 parties too?", a: "Yes, from restaurant private rooms to full halls." },
       { q: "How far in advance should I book quinceañera décor?", a: "As early as you can; many families book several months ahead, especially for spring and summer Saturdays." },
-      { q: "Can the decorator work with our dress color?", a: "Yes. Share the dress color and any inspiration photos, and the design will be built around them." },
-      REFERRAL_FAQ,
+      { q: "Can you work with our dress color?", a: "Yes. Share the dress color and any inspiration photos, and the design will be built around them." },
+      PROVIDER_FAQ,
     ],
     related: ["/birthday-party-decorations", "/balloon-decor", "/church-event-decorations", "/event-decor", "/service-area"],
   },
@@ -493,12 +493,12 @@ export const servicePages: ServicePage[] = [
     name: "Event Decorations",
     title: "Event Decorations & Party Decorators in Lancaster, PA",
     description:
-      "Event decorations in Lancaster, PA: graduation parties, weddings, baby showers, birthdays, church events, quinceañeras, holiday and corporate parties. Free quotes from local event decorators.",
+      "Event decorations in Lancaster, PA: graduation parties, weddings, baby showers, birthdays, church events, quinceañeras, holiday and corporate parties. Free quotes from Lancaster Decorators.",
     eyebrow: "Event & Party Décor · Lancaster County",
     h1: "Event Decorations & Party Decorators in Lancaster, PA",
     intro: [
-      "Graduation party, wedding, baby shower, birthday, church banquet or company party: tell us the date, venue, guest count and style, and we’ll introduce you to up to two independent Lancaster County event decorators, stylists or balloon artists.",
-      "They design, deliver, set up and (usually) tear down, so you can enjoy the day. Pick your event below for ideas, local tips and FAQs.",
+      "Graduation party, wedding, baby shower, birthday, church banquet or company party: tell us the date, venue, guest count and style, and we’ll put together a décor plan and quote.",
+      "We design, deliver, set up and tear down, so you can enjoy the day. Pick your event below for ideas, local tips and FAQs.",
     ],
     image: "/images/ballroom-wide.jpg",
     imageAlt: "Ballroom decorated for a reception with florals and candles",
@@ -519,7 +519,7 @@ export const servicePages: ServicePage[] = [
       {
         heading: "Decorator, rental company or planner?",
         paragraphs: [
-          "A décor stylist designs the look and installs it. A rental company supplies pieces (and sometimes delivery and setup). A planner runs the whole timeline and vendor team. For most parties, a decorator alone is enough; for weddings and big banquets, many hosts combine a planner with a decorator.",
+          "A décor stylist (that’s us) designs the look and installs it. A rental company supplies pieces (and sometimes delivery and setup). A planner runs the whole timeline and vendor team. For most parties, a decorator alone is enough; for weddings and big banquets, many hosts combine a planner with a decorator.",
         ],
       },
       {
@@ -531,22 +531,22 @@ export const servicePages: ServicePage[] = [
       {
         heading: "Corporate & holiday events",
         paragraphs: [
-          "We also take requests for company holiday parties, grand openings, galas and banquets: entrance décor, balloon installs, centerpieces and branded backdrops. Choose “Corporate event décor” or “Holiday party décor” in the form.",
+          "We also decorate company holiday parties, grand openings, galas and banquets: entrance décor, balloon installs, centerpieces and branded backdrops. Choose “Corporate event décor” or “Holiday party décor” in the form.",
         ],
       },
     ],
     pricing: {
       heading: "How much does event décor cost?",
       paragraphs: [
-        "It varies with guest count, the number and size of installs, rentals, florals and labor. Each event page above shows published starting prices from local balloon and rental businesses where they exist, clearly labeled as their prices. For your event, request a free quote and compare.",
+        "It varies with guest count, the number and size of installs, rentals, florals and labor. Each event page above shows published starting prices from local balloon and rental businesses where they exist, clearly labeled as their prices. For your event, request a free quote from us.",
       ],
     },
     faqs: [
-      { q: "What kinds of events do you take requests for?", a: "Graduation parties, weddings, baby and bridal showers, birthdays, church events (anniversaries, baptisms, first communions, banquets), quinceañeras and sweet 16s, holiday parties and corporate events across Lancaster County." },
-      { q: "Do decorators handle setup and teardown?", a: "Most full-service decorators do. Rental-only companies may charge for delivery or expect pickup. Confirm what’s included and the venue’s timing." },
-      { q: "Can I just rent décor and set it up myself?", a: "Yes. Tell us you’re looking for rentals only and we’ll point you to local rental options." },
-      { q: "Do you cover venues outside Lancaster city?", a: "Yes. Requests come from across Lancaster County, including Lititz, Ephrata, Manheim, Mount Joy, Elizabethtown, Strasburg, Leola, Millersville and Willow Street." },
-      REFERRAL_FAQ,
+      { q: "What kinds of events do you decorate?", a: "Graduation parties, weddings, baby and bridal showers, birthdays, church events (anniversaries, baptisms, first communions, banquets), quinceañeras and sweet 16s, holiday parties and corporate events across Lancaster County." },
+      { q: "Do you handle setup and teardown?", a: "Yes. Setup before guests arrive and teardown afterward are part of our full-service décor; we’ll confirm timing with your venue." },
+      { q: "Can I just rent décor and set it up myself?", a: "Tell us you’re looking for rentals only and we’ll let you know what we can offer or point you to local rental options." },
+      { q: "Do you cover venues outside Lancaster city?", a: "Yes. We decorate across Lancaster County, including Lititz, Ephrata, Manheim, Mount Joy, Elizabethtown, Strasburg, Leola, Millersville and Willow Street." },
+      PROVIDER_FAQ,
     ],
     related: ["/balloon-decor", "/holiday-decorating", "/blog", "/service-area"],
   },
@@ -562,7 +562,7 @@ export const servicePages: ServicePage[] = [
     eyebrow: "Balloon Décor · Lancaster County",
     h1: "Balloon Decorations, Arches & Garlands in Lancaster, PA",
     intro: [
-      "Balloon arches, organic garlands, columns and backdrops can turn a living room, backyard, church hall or venue into a party. Tell us the date, location, colors and what you’re celebrating, and we’ll match you with up to two independent Lancaster County balloon artists.",
+      "Balloon arches, organic garlands, columns and backdrops can turn a living room, backyard, church hall or venue into a party. Tell us the date, location, colors and what you’re celebrating, and we’ll send you ideas and a quote.",
     ],
     image: "/images/balloon-garland.jpg",
     imageAlt: "Organic champagne balloon garland",
@@ -582,7 +582,7 @@ export const servicePages: ServicePage[] = [
       {
         heading: "Balloon arches",
         paragraphs: [
-          "An arch is the classic statement piece for graduation parties, school events and grand openings. Full arches span an entrance or walkway; framed arches (chiara, hoop or rectangle frames) give a cleaner look behind a dessert table or throne chair. Give the decorator the width and height of the space and whether the arch is indoors or outdoors.",
+          "An arch is the classic statement piece for graduation parties, school events and grand openings. Full arches span an entrance or walkway; framed arches (chiara, hoop or rectangle frames) give a cleaner look behind a dessert table or throne chair. Give us the width and height of the space and whether the arch is indoors or outdoors.",
         ],
       },
       {
@@ -594,13 +594,13 @@ export const servicePages: ServicePage[] = [
       {
         heading: "Indoor vs. outdoor balloon décor",
         paragraphs: [
-          "Indoor installs hold up best. Outdoors, direct sun, heat and wind can make latex balloons fade, pop or oxidize faster. Mention if your event is outdoors and the pro can suggest shade, timing and materials that hold up better.",
+          "Indoor installs hold up best. Outdoors, direct sun, heat and wind can make latex balloons fade, pop or oxidize faster. Mention if your event is outdoors and we’ll suggest shade, timing and materials that hold up better.",
         ],
       },
       {
-        heading: "Balloon artists around Lancaster County",
+        heading: "Balloon décor around Lancaster County",
         paragraphs: [
-          "We take balloon requests from Lancaster city, Lititz, Ephrata, Manheim, Elizabethtown, Mount Joy, Millersville and the rest of the county. Some pros deliver and install; some offer pickup pieces.",
+          "We deliver and install balloon décor in Lancaster city, Lititz, Ephrata, Manheim, Elizabethtown, Mount Joy, Millersville and the rest of the county.",
         ],
       },
     ],
@@ -617,12 +617,12 @@ export const servicePages: ServicePage[] = [
       sources: [BALLOON_LADY, BALLOONABLES],
     },
     faqs: [
-      { q: "How much does a balloon arch cost in Lancaster, PA?", a: "It depends on size, balloon type and setup. As a reference, Lancaster PA Balloon Lady publishes chiara arches starting at $500 and golden hoops starting at $375. Those are their prices; request a free quote to compare local options." },
+      { q: "How much does a balloon arch cost in Lancaster, PA?", a: "It depends on size, balloon type and setup. As a reference, Lancaster PA Balloon Lady publishes chiara arches starting at $500 and golden hoops starting at $375. Those are their prices; request a free quote for ours." },
       { q: "How much does a balloon garland cost?", a: "Garlands are usually priced by length, colors and specialty balloons. Balloonables in Lancaster publishes grab-and-go garlands starting at $80 for a one-color 4 ft garland. Custom installed garlands cost more." },
       { q: "How far in advance should I book balloon décor?", a: "As early as you can, especially for weekend events in spring and graduation season. Some shops offer last-minute grab-and-go garlands." },
-      { q: "Can balloon garlands go outside?", a: "Yes, but sun, heat and wind shorten their life. Tell the pro it’s outdoors so they can plan placement and timing." },
-      { q: "Do balloon artists deliver and set up?", a: "Most custom installs include or offer delivery and setup. Some smaller pieces are pickup-only." },
-      REFERRAL_FAQ,
+      { q: "Can balloon garlands go outside?", a: "Yes, but sun, heat and wind shorten their life. Tell us it’s outdoors so we can plan placement and timing." },
+      { q: "Do you deliver and set up balloon décor?", a: "Yes. Delivery and setup are part of our custom installs; we’ll confirm the details in your quote." },
+      PROVIDER_FAQ,
     ],
     related: ["/graduation-party-decorations", "/birthday-party-decorations", "/baby-shower-decorations", "/event-decor", "/service-area"],
   },
@@ -638,7 +638,7 @@ export const servicePages: ServicePage[] = [
     eyebrow: "Holiday Event Décor · Lancaster County",
     h1: "Christmas Party & Holiday Event Decorations in Lancaster, PA",
     intro: [
-      "Hosting a company Christmas party, a church Christmas dinner, a New Year’s Eve celebration or an Easter fellowship event? Tell us the date, venue and guest count, and we’ll match you with up to two independent Lancaster County event decorators.",
+      "Hosting a company Christmas party, a church Christmas dinner, a New Year’s Eve celebration or an Easter fellowship event? Tell us the date, venue and guest count, and we’ll send you ideas and a quote.",
       "Churches can also request seasonal sanctuary décor: Advent and Christmas greenery, wreaths and altar arrangements, and Easter flowers.",
     ],
     image: "/images/bridal-shower.jpg",
@@ -659,7 +659,7 @@ export const servicePages: ServicePage[] = [
       {
         heading: "Book holiday party décor early",
         paragraphs: [
-          "December weekends are the busiest time of year for holiday parties, and decorators and venues fill up early. Request quotes in October or early November for the most choice. For church Christmas décor, share your Advent and Christmas Eve service dates so installs fit around services.",
+          "December weekends are the busiest time of year for holiday parties, and décor and venue dates fill up early. Request quotes in October or early November for the most choice. For church Christmas décor, share your Advent and Christmas Eve service dates so installs fit around services.",
           "For Easter, plan around Holy Week. Many churches want flowers in place by Easter Sunday morning, and altar guild guidelines may limit what can be added.",
         ],
       },
@@ -673,15 +673,15 @@ export const servicePages: ServicePage[] = [
     pricing: {
       heading: "How much does holiday event décor cost?",
       paragraphs: [
-        "It depends on guest count, number of tables, centerpiece style, backdrops and setup timing. We don’t publish a range we can’t back up. Request a free quote and local decorators will price your event.",
+        "It depends on guest count, number of tables, centerpiece style, backdrops and setup timing. We don’t publish a range we can’t back up. Request a free quote and we’ll price your event.",
       ],
     },
     faqs: [
       { q: "Do you decorate company Christmas parties?", a: "Yes. Requests for office and venue holiday parties are welcome: entrances, centerpieces, backdrops and balloon installs." },
-      { q: "Can you decorate our church for Christmas or Easter?", a: "We can match your church with decorators who do seasonal greenery, wreaths, garland and altar flowers. Share your service dates and any guidelines." },
+      { q: "Can you decorate our church for Christmas or Easter?", a: "Yes. We can provide seasonal greenery, wreaths, garland and altar flowers. Share your service dates and any guidelines." },
       { q: "When should I book holiday party décor?", a: "October or early November is ideal, because December weekends fill quickly." },
       { q: "Do you decorate homes for Christmas?", a: "No. Lancaster Decorators focuses on events: parties, banquets, church events and celebrations." },
-      REFERRAL_FAQ,
+      PROVIDER_FAQ,
     ],
     related: ["/church-event-decorations", "/blog/christmas-holiday-decorating-lancaster-county", "/event-decor", "/service-area"],
   },
