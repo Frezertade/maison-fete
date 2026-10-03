@@ -75,7 +75,7 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   // Icons come from the file conventions: src/app/icon.svg (LD monogram),
-  // src/app/apple-icon.tsx (generated PNG) and src/app/favicon.ico/route.ts.
+  // src/app/apple-icon.tsx (generated PNG) and src/app/favicon.ico.
   ...(verification ? { verification } : {}),
   metadataBase: new URL(SITE_URL),
 };
