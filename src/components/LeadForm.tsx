@@ -57,15 +57,15 @@ export default function LeadForm({
           Request received
         </h3>
         <p className="mt-3 max-w-sm text-sm text-warm-gray">
-          We’ll review your project and connect you with a vetted Lancaster-area
-          décor pro — usually within 1 business day.
+          We’ll review your event and connect you with a Lancaster-area event
+          decorator — usually within 1 business day.
         </p>
         <button
           type="button"
           onClick={() => setState("idle")}
           className="mt-8 text-[11px] uppercase tracking-[0.2em] text-gold underline-offset-4 hover:underline"
         >
-          Submit another project
+          Submit another event
         </button>
       </div>
     );
@@ -108,7 +108,7 @@ export default function LeadForm({
         />
       </label>
       <label className="block text-sm">
-        <span className={label}>Project type *</span>
+        <span className={label}>Event type *</span>
         <select
           required
           name="projectType"
@@ -116,7 +116,7 @@ export default function LeadForm({
           className={field}
         >
           <option value="" disabled>
-            Select project
+            Select event
           </option>
           {projectTypes.map((t) => (
             <option key={t}>{t}</option>
@@ -147,12 +147,12 @@ export default function LeadForm({
       </label>
       {!compact && (
         <label className="block text-sm sm:col-span-2">
-          <span className={label}>Tell us about your project</span>
+          <span className={label}>Tell us about your event</span>
           <textarea
             name="message"
             rows={4}
             className={`${field} resize-y`}
-            placeholder="Rooms or event, style you love, date, guest count..."
+            placeholder="Event, date, venue, guest count, colors or theme..."
           />
         </label>
       )}
@@ -171,8 +171,8 @@ export default function LeadForm({
         )}
         <p className="mt-3 text-[11px] leading-relaxed text-warm-gray">
           Free, no obligation. By submitting, you agree we may share your
-          request with up to 2 independent local décor professionals who may
-          contact you by phone, text, or email about your project.
+          request with up to 2 independent local event decorators who may
+          contact you by phone, text, or email about your event.
         </p>
       </div>
     </form>

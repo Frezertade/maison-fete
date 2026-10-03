@@ -81,14 +81,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           })}
           <div className="mt-10 rounded-2xl border border-gold/30 bg-ivory p-6">
             <p className="font-display text-2xl text-espresso">Want real Lancaster quotes?</p>
-            <p className="mt-2 text-warm-gray">Pricing varies by pro and project. Describe yours once and compare quotes from local pros for free.</p>
+            <p className="mt-2 text-warm-gray">Pricing varies by decorator and event. Describe yours once and compare quotes from local decorators for free.</p>
             <a href="#contact" className="mt-4 inline-flex rounded-full bg-espresso px-6 py-3 text-[12px] uppercase tracking-[0.2em] text-ivory hover:bg-charcoal">
               Request a free quote
             </a>
           </div>
           <Sources sources={post.sources} />
           <p className="mt-6 text-xs text-warm-gray">
-            Published by {SITE_NAME}, a free referral service connecting Lancaster County homeowners and hosts with independent décor professionals.
+            Published by {SITE_NAME}, a free referral service connecting Lancaster County hosts, families and churches with independent event decorators.
           </p>
         </div>
       </article>
