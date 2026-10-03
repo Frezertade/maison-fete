@@ -8,9 +8,9 @@ import { pageMetadata } from "@/lib/seo";
 import { towns } from "@/lib/towns";
 
 export const metadata = pageMetadata({
-  title: "Service Area: Decorators Across Lancaster County, PA",
+  title: "Event Decorators Across Lancaster County, PA — Service Area",
   description:
-    "Lancaster Decorators matches homeowners and hosts with décor pros in Lancaster, Lititz, Ephrata, Manheim, Mount Joy, Elizabethtown, Strasburg, Leola, Millersville and Willow Street.",
+    "Event decorations for graduation parties, weddings, baby showers, birthdays and church events in Lancaster, Lititz, Ephrata, Manheim, Mount Joy, Elizabethtown, Strasburg, Leola, Millersville and Willow Street.",
   path: "/service-area",
   image: "/images/proposal-setup.jpg",
   imageAlt: "Garden pathway styled with florals and candles",
@@ -22,12 +22,12 @@ const faqs = [
     a: "We take requests from anywhere in Lancaster County. Enter your ZIP code in the form and we’ll match you with pros who travel to your area. Projects just outside the county are fine to submit too; we’ll let you know if no one can cover it.",
   },
   {
-    q: "Do the décor pros charge for travel?",
-    a: "Some do, depending on distance. Travel fees are set by each independent pro, so ask when you compare quotes.",
+    q: "Do decorators charge for delivery or travel?",
+    a: "Some do, depending on distance. Delivery and travel fees are set by each independent decorator, so ask when you compare quotes.",
   },
   {
     q: "Is Lancaster Decorators a local business with a showroom?",
-    a: "No. We’re a free online referral service for Lancaster County. The decorators, stylists and stagers we refer are independent local businesses.",
+    a: "No. We’re a free online referral service for Lancaster County. The event decorators, stylists and balloon artists we refer are independent local businesses.",
   },
 ];
 
@@ -36,9 +36,9 @@ export default function ServiceAreaPage() {
     <SiteChrome>
       <PageHero
         eyebrow="Service Area"
-        title="Décor Pros Across Lancaster County, PA"
+        title="Event Decorators Across Lancaster County, PA"
         intro={[
-          "We match homeowners, sellers, realtors and event hosts with independent decorators, stylists, stagers and balloon artists throughout Lancaster County. Below are some of the towns we cover, with ZIP codes and the services that tend to fit.",
+          "We match families, churches and businesses with independent event decorators, stylists and balloon artists throughout Lancaster County, for graduation parties, weddings, baby showers, birthdays, church events and more. Below are some of the towns we cover, with ZIP codes and the events that tend to come up.",
         ]}
         image="/images/proposal-setup.jpg"
         imageAlt="Garden pathway styled with florals and candles"

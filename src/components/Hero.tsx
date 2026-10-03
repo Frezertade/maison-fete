@@ -39,17 +39,18 @@ export default function Hero() {
       <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-10 px-5 pb-16 pt-32 md:px-8 md:pb-24 lg:grid-cols-12 lg:items-end">
         <div className="lg:col-span-7">
         <p className="animate-fade-up text-[11px] uppercase tracking-[0.35em] text-champagne/90 md:text-xs">
-          Home &amp; Event Décor · Lancaster County, PA
+          Party &amp; Event Decorations · Lancaster County, PA
         </p>
         <h1 className="animate-fade-up delay-100 mt-5 max-w-4xl font-display text-[2.8rem] leading-[0.95] tracking-tight text-soft-white sm:text-6xl md:text-7xl lg:text-[4.75rem]">
-          Lancaster décor &amp; interior pros,
+          Event decorations in Lancaster,
           <br />
-          <span className="italic text-champagne">matched to you</span>
+          <span className="italic text-champagne">styled for your celebration</span>
         </h1>
         <p className="animate-fade-up delay-200 mt-6 max-w-xl text-base leading-relaxed text-cream/85 md:text-lg">
-          Interior styling, holiday décor, home staging, weddings, and parties
-          across Lancaster County. Tell us about your project once — we’ll
-          connect you with vetted local decorators. Free, no-obligation quotes.
+          Graduation parties, weddings, baby showers, birthdays and church
+          events across Lancaster County. Tell us about your event once and
+          we’ll connect you with local event decorators. Free, no-obligation
+          quotes.
         </p>
         <div className="animate-fade-up delay-300 mt-10 flex flex-wrap items-center gap-4 lg:hidden">
           <a
@@ -69,7 +70,7 @@ export default function Hero() {
         <div className="animate-fade-up delay-400 mt-14 grid max-w-2xl grid-cols-3 gap-6 border-t border-soft-white/15 pt-8 text-soft-white/80">
           {[
             { n: "Free", l: "No-obligation quotes" },
-            { n: "Local", l: "Lancaster County pros" },
+            { n: "Local", l: "Lancaster County decorators" },
             { n: "1 day", l: "Typical response" },
           ].map((stat) => (
             <div key={stat.l}>
@@ -87,7 +88,7 @@ export default function Hero() {
         <div className="hidden lg:col-span-5 lg:block">
           <div className="rounded-3xl bg-soft-white/95 p-6 shadow-2xl backdrop-blur">
             <p className="font-display text-2xl text-espresso">
-              Get free décor quotes
+              Get free event décor quotes
             </p>
             <p className="mb-5 mt-1 text-sm text-warm-gray">
               Takes 30 seconds · Lancaster County only

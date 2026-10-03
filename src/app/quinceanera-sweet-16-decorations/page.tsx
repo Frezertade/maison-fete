@@ -2,7 +2,7 @@ import ServicePageView from "@/components/page/ServicePageView";
 import { pageMetadata } from "@/lib/seo";
 import { servicePageByPath } from "@/lib/service-pages";
 
-const page = servicePageByPath["/home-staging"];
+const page = servicePageByPath["/quinceanera-sweet-16-decorations"];
 
 export const metadata = pageMetadata({
   title: page.title,

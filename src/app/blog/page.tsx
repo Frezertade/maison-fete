@@ -7,9 +7,9 @@ import { posts } from "@/lib/blog";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "Lancaster Décor Guides: Costs, Staging & Holiday Tips",
+  title: "Lancaster Event Décor Guides: Grad Parties, Showers & Church Events",
   description:
-    "Practical guides for Lancaster County homeowners and hosts: what decorators cost, how home staging works, and hiring a Christmas decorator.",
+    "Guides for Lancaster County hosts: graduation party decoration ideas and costs, baby shower venues, church anniversary and first communion décor, and holiday party tips.",
   path: "/blog",
   image: "/images/ceiling-install.jpg",
   imageAlt: "Hanging floral installation over a reception table",
@@ -20,8 +20,8 @@ export default function BlogIndex() {
     <SiteChrome>
       <PageHero
         eyebrow="Guides"
-        title="Lancaster Décor Guides"
-        intro={["Straight answers on cost, timing and hiring the right décor pro in Lancaster County. Any figures we quote come from cited public sources."]}
+        title="Lancaster Event Décor Guides"
+        intro={["Ideas, timing and cost references for graduation parties, showers, church events and more in Lancaster County. Any figures we quote come from cited public sources."]}
         image="/images/ceiling-install.jpg"
         imageAlt="Hanging floral installation over a reception table"
         crumbs={[{ name: "Guides", path: "/blog" }]}

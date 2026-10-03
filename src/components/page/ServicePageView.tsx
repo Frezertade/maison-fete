@@ -6,7 +6,9 @@ import RelatedLinks from "@/components/page/RelatedLinks";
 import SiteChrome from "@/components/page/SiteChrome";
 import Sources from "@/components/page/Sources";
 import Link from "next/link";
+import Image from "next/image";
 import { towns } from "@/lib/towns";
+import { eventPagePaths, servicePageByPath } from "@/lib/service-pages";
 import { BUSINESS_ID, absoluteUrl } from "@/lib/seo";
 import type { ServicePage } from "@/lib/service-pages";
 
@@ -19,8 +21,39 @@ export default function ServicePageView({ page }: { page: ServicePage }) {
         intro={page.intro}
         image={page.image}
         imageAlt={page.imageAlt}
-        crumbs={[{ name: page.name, path: page.path }]}
+        crumbs={
+          page.hub
+            ? [{ name: page.name, path: page.path }]
+            : [
+                { name: "Event Decorations", path: "/event-decor" },
+                { name: page.name, path: page.path },
+              ]
+        }
       />
+
+      {page.hub && (
+        <section data-nav-theme="light" className="bg-soft-white py-20 md:py-24">
+          <div className="mx-auto max-w-7xl px-5 md:px-8">
+            <h2 className="font-display text-3xl text-espresso md:text-4xl">Choose your event</h2>
+            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              {eventPagePaths.map((path) => {
+                const ev = servicePageByPath[path];
+                return (
+                  <Link key={path} href={path} className="group overflow-hidden rounded-2xl bg-ivory shadow-[0_20px_60px_rgba(28,22,18,0.04)]">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <Image src={ev.image} alt={ev.imageAlt} fill sizes="(max-width: 768px) 100vw, 25vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                    </div>
+                    <div className="p-5">
+                      <h3 className="font-display text-2xl leading-snug text-espresso">{ev.name}</h3>
+                      <span className="mt-2 inline-block text-[11px] uppercase tracking-[0.2em] text-gold">Ideas & quotes →</span>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section data-nav-theme="light" className="bg-ivory py-20 md:py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
@@ -63,6 +96,13 @@ export default function ServicePageView({ page }: { page: ServicePage }) {
                 <p key={p.slice(0, 40)}>{p}</p>
               ))}
             </div>
+            {page.pricing.bullets && (
+              <ul className="mt-4 list-disc space-y-2 pl-5 text-charcoal/85">
+                {page.pricing.bullets.map((b) => (
+                  <li key={b}>{b}</li>
+                ))}
+              </ul>
+            )}
             {page.pricing.sources && <Sources sources={page.pricing.sources} />}
             <a
               href="#contact"
@@ -73,7 +113,7 @@ export default function ServicePageView({ page }: { page: ServicePage }) {
           </div>
 
           <div>
-            <h2 className="font-display text-3xl text-espresso">Where we take {page.name.toLowerCase()} requests</h2>
+            <h2 className="font-display text-3xl text-espresso">Towns we cover for {page.name.toLowerCase()}</h2>
             <p className="mt-4 leading-relaxed text-charcoal/85">
               Throughout Lancaster County, including{" "}
               {towns.map((t, i) => (
@@ -94,7 +134,7 @@ export default function ServicePageView({ page }: { page: ServicePage }) {
 
       <FaqSection faqs={page.faqs} heading={`${page.name} in Lancaster: FAQ`} />
       <RelatedLinks paths={page.related} />
-      <LeadCta source={page.slug} projectType={page.projectType} heading={`Get free ${page.name.toLowerCase()} quotes`} />
+      <LeadCta source={page.slug} projectType={page.projectType} heading={`Get free ${page.name.toLowerCase()} quotes`} text={`Tell us your date, venue, guest count and style, and we’ll match you with up to two independent Lancaster County decorators. Free, no obligation.`} />
 
       <JsonLd
         data={{

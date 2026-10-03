@@ -52,15 +52,18 @@ export default function Home() {
               })),
             ],
             knowsAbout: [
-              "Interior decorating",
-              "Home staging",
-              "Holiday decorating",
-              "Wedding and event decor",
-              "Balloon decor",
+              "Graduation party decorations",
+              "Wedding decor",
+              "Baby shower decorations",
+              "Birthday party decorations",
+              "Church event decorations",
+              "Quinceañera and sweet 16 decorations",
+              "Balloon arches and garlands",
+              "Holiday party decorations",
             ],
             hasOfferCatalog: {
               "@type": "OfferCatalog",
-              name: "Décor services (via independent local pros)",
+              name: "Event decorating services (via independent local decorators)",
               itemListElement: servicePages.map((p) => ({
                 "@type": "Offer",
                 itemOffered: {

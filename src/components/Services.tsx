@@ -10,17 +10,18 @@ export default function Services() {
         <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
           <div className="max-w-2xl">
             <p className="text-[11px] uppercase tracking-[0.3em] text-gold">
-              Home &amp; Event Décor Services
+              Event Decorating Services
             </p>
             <h2 className="mt-3 font-display text-4xl leading-tight text-espresso md:text-5xl lg:text-6xl">
-              Lancaster décor pros
+              Decorations for
               <br />
-              <span className="italic text-rose">for every space</span>
+              <span className="italic text-rose">every celebration</span>
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-warm-gray md:text-base">
-            Living rooms to ballrooms — tell us what you’re planning and we’ll
-            match you with a vetted local decorator. Free quotes, no obligation.
+            Backyard grad parties to church banquets: tell us what you’re
+            planning and we’ll match you with a local event decorator. Free
+            quotes, no obligation.
           </p>
         </div>
 

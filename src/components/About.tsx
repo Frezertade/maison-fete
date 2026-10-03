@@ -53,30 +53,30 @@ export default function About() {
               Why Lancaster Decorators
             </p>
             <h2 className="mt-3 font-display text-4xl leading-tight text-espresso md:text-5xl">
-              Lancaster’s décor network,
+              Lancaster’s event décor network,
               <br />
               <span className="italic text-rose">not just one studio</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-warm-gray">
-              Lancaster Decorators connects Lancaster County homeowners, hosts, and
-              businesses with independent décor and interior styling
-              professionals we know and trust. Instead of calling around, you
+              Lancaster Decorators connects Lancaster County families, churches
+              and businesses with independent event decorators, stylists and
+              balloon artists. Instead of calling around, you
               send one request and get matched with the right pro for your
               style, budget, and timeline.
             </p>
             <p className="mt-4 text-base leading-relaxed text-warm-gray">
               Our partners cover Lancaster, Lititz, Ephrata, Manheim, Mount Joy,
               Elizabethtown, Strasburg, and the rest of South Central
-              Pennsylvania — from a single-room refresh or holiday install to a
-              full wedding reception.
+              Pennsylvania, from a backyard graduation party or baby shower to a
+              church anniversary banquet or a full wedding reception.
             </p>
 
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">
               {[
-                "Interior & room styling",
-                "Holiday & seasonal installs",
-                "Home staging for sellers",
-                "Wedding & party décor",
+                "Graduation party décor",
+                "Wedding & shower décor",
+                "Birthday & quinceañera décor",
+                "Church event decorations",
                 "Free, no-obligation quotes",
                 "Vetted local professionals",
               ].map((item) => (

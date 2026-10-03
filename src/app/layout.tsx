@@ -33,26 +33,26 @@ const verification: Metadata["verification"] | undefined =
 
 export const metadata: Metadata = {
   title: {
-    default: "Lancaster PA Home & Event Décor | Free Quotes | Lancaster Decorators",
+    default: "Event & Party Decorations in Lancaster, PA | Lancaster Decorators",
     template: "%s | Lancaster Decorators",
   },
   description:
-    "Get matched with vetted Lancaster County décor pros for interior styling, holiday décor, home staging, weddings, and parties. Free, no-obligation quotes.",
+    "Event decorations in Lancaster, PA: graduation parties, weddings, baby showers, birthdays and church events. Get matched with local event decorators. Free, no-obligation quotes.",
   keywords: [
-    "interior decorator Lancaster PA",
-    "home decor Lancaster PA",
-    "interior design Lancaster PA",
-    "holiday decorating service Lancaster",
-    "home staging Lancaster PA",
-    "event decor Lancaster PA",
-    "wedding decorator Lancaster County",
-    "balloon decorations Lancaster PA",
+    "graduation party decorations Lancaster PA",
+    "wedding decor Lancaster PA",
+    "baby shower decorations Lancaster PA",
+    "party decorations Lancaster PA",
+    "church event decorations Lancaster",
+    "quinceanera decorations Lancaster PA",
+    "balloon arch Lancaster PA",
+    "event decorator Lancaster PA",
   ],
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Lancaster PA Home & Event Décor — Free Quotes from Local Pros",
+    title: "Event Decorations in Lancaster, PA — Free Quotes from Local Decorators",
     description:
-      "Interior styling, holiday décor, home staging, weddings & parties across Lancaster County. One request, matched with vetted local decorators.",
+      "Graduation parties, weddings, baby showers, birthdays and church events across Lancaster County. One request, matched with local event decorators.",
     url: "/",
     type: "website",
     locale: "en_US",
@@ -62,15 +62,15 @@ export const metadata: Metadata = {
         url: "/images/hero-wedding.jpg",
         width: 1280,
         height: 720,
-        alt: "Elegant champagne and ivory tablescape styled by a Lancaster décor pro",
+        alt: "Elegant champagne and ivory event tablescape in Lancaster County",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lancaster PA Home & Event Décor — Free Quotes",
+    title: "Event Decorations in Lancaster, PA — Free Quotes",
     description:
-      "Get matched with vetted Lancaster County décor and interior styling pros.",
+      "Get matched with Lancaster County event decorators for graduations, weddings, showers, birthdays and church events.",
     images: ["/images/hero-wedding.jpg"],
   },
   robots: { index: true, follow: true },

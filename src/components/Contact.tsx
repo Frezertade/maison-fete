@@ -13,12 +13,12 @@ export default function Contact() {
             <h2 className="mt-3 font-display text-4xl leading-tight text-espresso md:text-5xl">
               Tell us about
               <br />
-              <span className="italic text-rose">your project</span>
+              <span className="italic text-rose">your event</span>
             </h2>
             <p className="mt-5 text-base leading-relaxed text-warm-gray">
-              Home refresh, holiday install, staging, or a celebration — share a
-              few details and we’ll match you with up to two vetted
-              Lancaster-area décor pros. Free, no obligation.
+              Graduation party, wedding, shower, birthday or church event: share
+              a few details and we’ll match you with up to two Lancaster-area
+              event decorators. Free, no obligation.
             </p>
 
             <div className="mt-10 space-y-5 text-sm">
