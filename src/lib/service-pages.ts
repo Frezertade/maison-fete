@@ -664,6 +664,12 @@ export const servicePages: ServicePage[] = [
         ],
       },
       {
+        heading: "Lancaster County venues we decorate for holidays",
+        paragraphs: [
+          "Typical holiday setups include company parties in Lititz and Lancaster city, fellowship-hall Christmas dinners in Ephrata, Manheim and Mount Joy, and sanctuary greenery for churches across the county. Outdoor pavilion parties need weighted pieces; historic rooms often ban open flame, so plan on LED candles.",
+        ],
+      },
+      {
         heading: "What to include in your request",
         paragraphs: [
           "Date and start time, venue, guest count, colors or theme, and whether you need takedown the same night. For churches: the spaces to decorate (sanctuary, narthex, fellowship hall) and any guidelines from your church office.",
@@ -674,6 +680,7 @@ export const servicePages: ServicePage[] = [
       heading: "How much does holiday event décor cost?",
       paragraphs: [
         "It depends on guest count, number of tables, centerpiece style, backdrops and setup timing. We don’t publish a range we can’t back up. Request a free quote and we’ll price your event.",
+        "A single photo backdrop plus a few tables costs less than a full banquet hall with entrance décor, head table and sanctuary greenery. Share photos of the room if you have them — that speeds up an accurate quote.",
       ],
     },
     faqs: [
@@ -681,9 +688,10 @@ export const servicePages: ServicePage[] = [
       { q: "Can you decorate our church for Christmas or Easter?", a: "Yes. We can provide seasonal greenery, wreaths, garland and altar flowers. Share your service dates and any guidelines." },
       { q: "When should I book holiday party décor?", a: "October or early November is ideal, because December weekends fill quickly." },
       { q: "Do you decorate homes for Christmas?", a: "No. Lancaster Decorators focuses on events: parties, banquets, church events and celebrations." },
+      { q: "Can you reuse church Christmas décor for Easter?", a: "Usually not — greenery and poinsettias are seasonal. Ask if you want a spring plan alongside your Christmas install." },
       PROVIDER_FAQ,
     ],
-    related: ["/church-event-decorations", "/blog/christmas-holiday-decorating-lancaster-county", "/event-decor", "/service-area"],
+    related: ["/church-event-decorations", "/blog/christmas-holiday-decorating-lancaster-county", "/event-decor", "/service-area", "/balloon-decor"],
   },
 ];
 

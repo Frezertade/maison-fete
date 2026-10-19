@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "@/components/Logo";
+import { posts } from "@/lib/blog";
 import { nav, serviceLinks, site } from "@/lib/content";
 
 export default function Footer() {
@@ -10,7 +11,7 @@ export default function Footer() {
     >
       <div className="mx-auto max-w-7xl px-5 py-16 md:px-8">
         <div className="grid gap-12 md:grid-cols-12">
-          <div className="md:col-span-4">
+          <div className="md:col-span-3">
             <Link href="/" aria-label="Lancaster Decorators home">
               <Logo theme="dark" variant="full" />
             </Link>
@@ -18,7 +19,7 @@ export default function Footer() {
               {site.description}
             </p>
           </div>
-          <div className="md:col-span-3">
+          <div className="md:col-span-2">
             <p className="text-[10px] uppercase tracking-[0.22em] text-champagne">
               Services
             </p>
@@ -33,6 +34,31 @@ export default function Footer() {
                   </a>
                 </li>
               ))}
+            </ul>
+          </div>
+          <div className="md:col-span-3">
+            <p className="text-[10px] uppercase tracking-[0.22em] text-champagne">
+              Guides
+            </p>
+            <ul className="mt-4 space-y-2">
+              {posts.map((p) => (
+                <li key={p.slug}>
+                  <Link
+                    href={`/blog/${p.slug}`}
+                    className="text-sm text-cream/70 transition-colors hover:text-champagne"
+                  >
+                    {p.metaTitle}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-sm text-cream/70 transition-colors hover:text-champagne"
+                >
+                  All guides →
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="md:col-span-2">
@@ -52,7 +78,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div className="md:col-span-3">
+          <div className="md:col-span-2">
             <p className="text-[10px] uppercase tracking-[0.22em] text-champagne">
               Contact
             </p>
