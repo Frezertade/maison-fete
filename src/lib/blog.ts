@@ -218,7 +218,7 @@ export const posts: BlogPost[] = [
     description:
       "Planning Christmas party or church Christmas décor in Lancaster County? Ideas for company parties, fellowship dinners, sanctuary greenery and Easter follow-up, plus booking tips.",
     datePublished: "2026-10-02",
-    dateModified: "2026-10-02",
+    dateModified: "2026-10-19",
     image: "/images/bridal-shower.jpg",
     imageAlt: "Candlelit holiday table with red florals and taper candles",
     excerpt: "Company parties, church Christmas dinners and sanctuary décor: ideas and booking tips.",
@@ -244,10 +244,17 @@ export const posts: BlogPost[] = [
         "Advent wreath styling and Christmas Eve candlelight details, within church guidelines",
       ] },
       { type: "p", text: "Planning ahead for spring? We can also help with Easter church décor: altar and chancel flowers, entrance arrangements and Easter brunch tables." },
+      { type: "h2", text: "Town notes: Lititz, Ephrata, Manheim and Mount Joy" },
+      { type: "p", text: "Company parties often book downtown Lititz restaurants and private rooms, Ephrata banquet halls, and Manheim or Mount Joy fire halls. Ask about load-in time, whether ladders are allowed, and if candles need to be LED — those three details change the décor plan more than the color palette." },
+      { type: "ul", items: [
+        "Lititz: smaller rooms mean one strong photo backdrop beats lots of small centerpieces",
+        "Ephrata and New Holland halls: plan for long rectangular tables and limited wall attachment",
+        "Mount Joy / Elizabethtown: backyard and pavilion parties need weighted outdoor pieces and wind-safe balloons",
+      ] },
       { type: "h2", text: "When to book" },
       { type: "p", text: "December weekends fill early for both venues and decorators. Request quotes in October or early November. For churches, share your Advent, Christmas Eve and Christmas Day service times so installs and takedowns fit around them." },
       { type: "h2", text: "Get a quote from Lancaster Decorators" },
-      { type: "p", text: "Tell us the event, date, venue and guest count, and we’ll send you ideas and a free quote." },
+      { type: "p", text: "Tell us the event, date, venue and guest count, and we’ll send you ideas and a free quote. We decorate events only — not homes for Christmas." },
     ],
     faqs: [
       { q: "When should I book Christmas party décor in Lancaster County?", a: "October or early November gives the most choice; December weekends fill quickly." },
